@@ -1,0 +1,26 @@
+{
+    "name": "hoomat/management",
+    "description": "All Identity Info of CRM Users",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Hoomat\\Identities\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hoomat\\Management\\Providers\\ManagementServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
