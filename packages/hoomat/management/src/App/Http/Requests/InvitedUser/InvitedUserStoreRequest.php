@@ -9,16 +9,18 @@ class InvitedUserStoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'string'],
-            'size' => ['required', 'string'],
+            'email' => ['required', 'string', 'email'],
+            'access_level_id' => ['required', 'int', 'exists:access_levels,id'],
+            'organization_id' => ['required', 'int', 'exists:organizations,id'],
         ];
     }
 
     public function messages(): array
     {
         return [
-            'title.*' => 'عنوان وارد شده معتبر نیست',
-            'size.*' => 'اندازه انتخاب شده معتبر نیست',
+            'email.*' => 'hایمیل وارد شده معتبر نیست',
+            'access_level_id.*' => 'سطح دسترسی انتخاب شده معتبر نیست',
+            'organization_id.*' => 'سازمان انتخاب شده معتبر نیست',
         ];
     }
 }

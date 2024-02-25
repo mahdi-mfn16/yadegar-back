@@ -9,6 +9,6 @@ class InvitedUserSearchScope extends SearchScope
 {
     public function normalSearch($term): Builder
     {
-        return $this->builder->where('name', 'LIKE', "%$term%");
+        return $this->builder->where('email', 'LIKE', "%$term%");
     }
 }

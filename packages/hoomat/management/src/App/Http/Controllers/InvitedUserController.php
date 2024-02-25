@@ -8,6 +8,7 @@ use Hoomat\Management\App\Http\Requests\InvitedUser\InvitedUserStoreRequest;
 use Hoomat\Management\App\Http\Resources\InvitedUserResource;
 use Hoomat\Management\App\Models\DTOs\InvitedUserDTO;
 use Hoomat\Management\App\Models\InvitedUser;
+use Hoomat\Management\App\Models\Organization;
 use Hoomat\Management\App\Services\InvitedUserService;
 use Illuminate\Http\JsonResponse;
 
@@ -44,36 +45,10 @@ class InvitedUserController extends Controller
      */
     public function store(InvitedUserStoreRequest $request): JsonResponse
     {
-        $invitedUser = $this->invitedUserService->create(InvitedUserDTO::fromRequest($request));
+        $invitedUser = $this->invitedUserService->createInvitedUser($request);
         return $this->successResponse(InvitedUserResource::make($invitedUser));
     }
 
-
-    /**
-     *   InvitedUser show
-     *
-     * @param InvitedUser $invitedUser
-     * @return JsonResponse
-     */
-    public function show(InvitedUser $invitedUser): JsonResponse
-    {
-        $invitedUser = $this->invitedUserService->show($invitedUser['id']);
-        return $this->successResponse(InvitedUserResource::make($invitedUser));
-    }
-
-
-    /**
-     *  InvitedUser update
-     *
-     * @param InvitedUserStoreRequest $request
-     * @param InvitedUser $invitedUser
-     * @return JsonResponse
-     */
-    public function update(InvitedUserStoreRequest $request, InvitedUser $invitedUser): JsonResponse
-    { 
-        $invitedUser = $this->invitedUserService->update($invitedUser, InvitedUserDTO::fromModel($request->all()));
-        return $this->successResponse(InvitedUserResource::make($invitedUser));
-    }
 
 
     /**
@@ -98,7 +73,7 @@ class InvitedUserController extends Controller
      */
     public function sendInvite(InvitedUser $invitedUser): JsonResponse
     {
-        // $invitedUser = $this->invitedUserService->sendInvite($invitedUser);
+        $invitedUser = $this->invitedUserService->sendInvite($invitedUser);
         return $this->successResponse();
     }
 

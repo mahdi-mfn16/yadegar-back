@@ -9,6 +9,6 @@ class IndustrySearchScope extends SearchScope
 {
     public function normalSearch($term): Builder
     {
-        return $this->builder->where('name', 'LIKE', "%$term%");
+        return $this->builder->where('title', 'LIKE', "%$term%");
     }
 }

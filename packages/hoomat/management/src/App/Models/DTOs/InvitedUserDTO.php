@@ -12,5 +12,7 @@ class InvitedUserDTO extends BaseDTO
         public int $access_level_id,
         public ?int $status
     )
-    {}
+    {
+        $this->status = isset($status) ? $status : 0;
+    }
 }

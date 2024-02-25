@@ -10,7 +10,7 @@ class InvitedUserIndexRequest extends FormRequest
     {
         return [
             'limit' => ['sometimes', 'nullable', 'int', 'min:5'],
-            'filters.user' => ['sometimes', 'nullable', 'int', 'exists:users,id'],
+            'filters.organization' => ['sometimes', 'nullable', 'int', 'exists:organizations,id'],
             'filters.search' => ['sometimes', 'nullable', 'string']
         ];
     }
@@ -20,7 +20,7 @@ class InvitedUserIndexRequest extends FormRequest
     {
         return [
             'limit.*' => 'وضعیت ارسالی نامعتبر است',
-            'filters.user.*' => 'مقدار فیلتر کاربر نامعتبر است',
+            'filters.organization.*' => 'مقدار فیلتر سازمان نامعتبر است',
             'filters.search.*' => 'مقدار فیلتر جستجو نامعتبر است',
             
         ];

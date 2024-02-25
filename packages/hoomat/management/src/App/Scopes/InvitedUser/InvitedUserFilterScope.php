@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Builder;
 
 class InvitedUserFilterScope extends FilterScope
 {
-    public function is_customer($term): Builder
+    public function organization($term): Builder
     {
-        return $this->builder->where('is_customer', $term);
+        return $this->builder->where('organization_id', $term);
     }
 }

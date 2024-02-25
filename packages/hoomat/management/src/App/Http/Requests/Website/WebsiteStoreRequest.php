@@ -10,7 +10,8 @@ class WebsiteStoreRequest extends FormRequest
     {
         return [
             'title' => ['required', 'string'],
-            'size' => ['required', 'string'],
+            'domain' => ['required', 'string'],
+            'industry_id' => ['required', 'string', 'exists:industries,id'],
         ];
     }
 
@@ -18,7 +19,8 @@ class WebsiteStoreRequest extends FormRequest
     {
         return [
             'title.*' => 'عنوان وارد شده معتبر نیست',
-            'size.*' => 'اندازه انتخاب شده معتبر نیست',
+            'domain.*' => 'دامنه انتخاب شده معتبر نیست',
+            'industry_id.*' => 'حوزه انتخاب شده معتبر نیست',
         ];
     }
 }
