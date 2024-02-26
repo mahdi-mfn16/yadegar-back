@@ -13,8 +13,4 @@ class IndustryService extends BaseService
     }
 
 
-    public function getIndustries($request)
-    {
-        return $this->repository->get();
-    }
 }

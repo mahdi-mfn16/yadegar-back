@@ -5,19 +5,19 @@ namespace Hoomat\Management\App\Services;
 use Hoomat\Base\App\Services\BaseService;
 use Hoomat\Management\App\Models\DTOs\WebsiteDTO;
 use Hoomat\Management\App\Repositories\Interfaces\WebsiteRepositoryInterface;
+use Hoomat\Pricing\App\Repositories\Interfaces\PlanRepositoryInterface;
 
 class WebsiteService extends BaseService
 {
-    public function __construct(WebsiteRepositoryInterface $repository)
+    public function __construct(
+        WebsiteRepositoryInterface $repository,
+        private PlanRepositoryInterface $planRepo
+        )
     {
         parent::__construct($repository);
     }
 
 
-    public function getWebsites($request)
-    {
-        return $this->repository->get();
-    }
 
 
     public function createWebsite($request)

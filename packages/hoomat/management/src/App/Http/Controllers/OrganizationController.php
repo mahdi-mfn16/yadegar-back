@@ -45,7 +45,7 @@ class OrganizationController extends Controller
     public function store(OrganizationStoreRequest $request): JsonResponse
     {
         $organization = $this->organizationService->create(OrganizationDTO::fromRequest($request));
-        return $this->successResponse(OrganizationResource::make($organization));
+        return $this->dynamicResponse($organization, OrganizationResource::class);
     }
 
 
@@ -58,7 +58,7 @@ class OrganizationController extends Controller
     public function show(Organization $organization): JsonResponse
     {
         $organization = $this->organizationService->show($organization['id']);
-        return $this->successResponse(OrganizationResource::make($organization));
+        return $this->dynamicResponse($organization, OrganizationResource::class);
     }
 
 
@@ -72,7 +72,8 @@ class OrganizationController extends Controller
     public function update(OrganizationStoreRequest $request, Organization $organization): JsonResponse
     { 
         $organization = $this->organizationService->update($organization, OrganizationDTO::fromModel($request->all()));
-        return $this->successResponse(OrganizationResource::make($organization));
+        $organization = $this->organizationService->show($organization['id']);
+        return $this->dynamicResponse($organization, OrganizationResource::class);
     }
 
 

@@ -1,0 +1,26 @@
+{
+    "name": "hoomat/pricing",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alireza Rahimi",
+            "email": "alireza.rahimi.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Hoomat\\Pricing\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hoomat\\Pricing\\Providers\\PricingServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}

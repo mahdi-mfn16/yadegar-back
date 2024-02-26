@@ -11,6 +11,7 @@ class WebsiteStoreRequest extends FormRequest
         return [
             'title' => ['required', 'string'],
             'domain' => ['required', 'string'],
+            'organization_id' => ['required', 'string', 'exists:organizations,id'],
             'industry_id' => ['required', 'string', 'exists:industries,id'],
         ];
     }
@@ -20,7 +21,7 @@ class WebsiteStoreRequest extends FormRequest
         return [
             'title.*' => 'عنوان وارد شده معتبر نیست',
             'domain.*' => 'دامنه انتخاب شده معتبر نیست',
-            'industry_id.*' => 'حوزه انتخاب شده معتبر نیست',
+            'organization_id.*' => 'سازمان انتخاب شده معتبر نیست',
         ];
     }
 }

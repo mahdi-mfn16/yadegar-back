@@ -15,10 +15,6 @@ class InvitedUserService extends BaseService
     }
 
 
-    public function getInvitedUsers()
-    {
-        return $this->repository->get();
-    }
 
 
     public function createInvitedUser($request)

@@ -28,7 +28,7 @@ class IndustryController extends Controller
      */
     public function index(IndustryIndexRequest $request): JsonResponse
     {
-        $industries = $this->industryService->getIndustries($request);
+        $industries = $this->industryService->index();
         return $this->dynamicResponse($industries, IndustryResource::class);
     }
 

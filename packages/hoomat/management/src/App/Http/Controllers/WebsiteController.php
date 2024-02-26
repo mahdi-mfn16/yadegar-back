@@ -33,7 +33,7 @@ class WebsiteController extends Controller
      */
     public function index(WebsiteIndexRequest $request): JsonResponse
     {
-        $websites = $this->websiteService->getWebsites($request);
+        $websites = $this->websiteService->index();
         return $this->dynamicResponse($websites, WebsiteResource::class);
     }
 
@@ -47,7 +47,8 @@ class WebsiteController extends Controller
     public function store(WebsiteStoreRequest $request): JsonResponse
     {
         $website = $this->websiteService->createWebsite($request);
-        return $this->successResponse(WebsiteResource::make($website));
+        $website = $this->websiteService->show($website['id']);
+        return $this->dynamicResponse($website, WebsiteResource::class);
     }
 
 
@@ -60,7 +61,7 @@ class WebsiteController extends Controller
     public function show(Website $website): JsonResponse
     {
         $website = $this->websiteService->show($website['id']);
-        return $this->successResponse(WebsiteResource::make($website));
+        return $this->dynamicResponse($website, WebsiteResource::class);
     }
 
 
@@ -89,7 +90,8 @@ class WebsiteController extends Controller
     public function updatePlan(WebsiteUpdatePlanRequest $request, Website $website): JsonResponse
     { 
         $website = $this->websiteService->updatePlan($website, $request);
-        return $this->successResponse(WebsiteResource::make($website));
+        $website = $this->websiteService->show($website['id']);
+        return $this->dynamicResponse($website, WebsiteResource::class);
     }
 
 

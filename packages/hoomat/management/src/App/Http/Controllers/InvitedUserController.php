@@ -32,7 +32,7 @@ class InvitedUserController extends Controller
      */
     public function index(InvitedUserIndexRequest $request): JsonResponse
     {
-        $invitedUsers = $this->invitedUserService->getInvitedUsers($request);
+        $invitedUsers = $this->invitedUserService->index();
         return $this->dynamicResponse($invitedUsers, InvitedUserResource::class);
     }
 
@@ -46,7 +46,8 @@ class InvitedUserController extends Controller
     public function store(InvitedUserStoreRequest $request): JsonResponse
     {
         $invitedUser = $this->invitedUserService->createInvitedUser($request);
-        return $this->successResponse(InvitedUserResource::make($invitedUser));
+        $invitedUser = $this->invitedUserService->show($invitedUser->id);
+        return $this->dynamicResponse($invitedUser, InvitedUserResource::class);
     }
 
 
