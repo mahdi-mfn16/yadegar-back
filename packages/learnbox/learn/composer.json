@@ -1,0 +1,26 @@
+{
+    "name": "learnbox/learn",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Learnbox\\Learn\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Learnbox\\Learn\\Providers\\LearnServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}

@@ -9,12 +9,12 @@ return [
     /*
      * The HTML <title> for the generated documentation. If this is empty, Scribe will infer it from config('app.name').
      */
-    'title' => 'Karismo',
+    'title' => 'LearnBox',
 
     /*
      * A short description of your API. Will be included in the docs webpage, Postman collection and OpenAPI spec.
      */
-    'description' => 'Karismo Api built with ❤️, Special thanks to Taylor Otwell😁',
+    'description' => '',
 
     /*
      * The base URL displayed in the docs. If this is empty, Scribe will use the value of config('app.url').
@@ -383,7 +383,7 @@ INTRO
         ],
         'urlParameters' => [
             Strategies\UrlParameters\GetFromLaravelAPI::class,
-            Strategies\UrlParameters\GetFromLumenAPI::class,
+            // Strategies\UrlParameters\GetFromLumenAPI::class,
             Strategies\UrlParameters\GetFromUrlParamAttribute::class,
             Strategies\UrlParameters\GetFromUrlParamTag::class,
         ],
@@ -394,7 +394,7 @@ INTRO
             Strategies\QueryParameters\GetFromQueryParamTag::class,
         ],
         'headers' => [
-            Strategies\Headers\GetFromRouteRules::class,
+            // Strategies\Headers\GetFromRouteRules::class,
             Strategies\Headers\GetFromHeaderAttribute::class,
             Strategies\Headers\GetFromHeaderTag::class,
         ],

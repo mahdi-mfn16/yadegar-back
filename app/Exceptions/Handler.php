@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-use Hoomat\Base\App\Http\Controllers\Controller;
+use Learnbox\Base\App\Http\Controllers\Controller;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;

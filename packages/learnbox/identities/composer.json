@@ -1,0 +1,26 @@
+{
+    "name": "learnbox/identities",
+    "description": "All Identity Info of CRM Users",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Learnbox\\Identities\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Learnbox\\Identities\\Providers\\IdentitiesServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}

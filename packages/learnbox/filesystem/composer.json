@@ -1,0 +1,39 @@
+{
+    "name": "learnbox/filesystem",
+    "description": "this package help to manage all files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev",
+        "knuckleswtf/scribe": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Learnbox\\Filesystem\\Tests\\": "tests/",
+            "Learnbox\\Filesystem\\": "src/",
+            "Learnbox\\Filesystem\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Learnbox\\Filesystem\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "livewire/livewire": "^2.10"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Learnbox\\Filesystem\\Providers\\FileSystemServiceProvider"
+            ]
+        }
+    }
+}

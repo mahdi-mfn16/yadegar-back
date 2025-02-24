@@ -1,0 +1,19 @@
+{
+    "name": "learnbox/base",
+    "description": "Base Modules of Projects",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Learnbox\\Base\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

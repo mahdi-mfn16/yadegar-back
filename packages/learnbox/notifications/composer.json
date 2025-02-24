@@ -1,0 +1,39 @@
+{
+    "name": "learnbox/notifications",
+    "description": "this package manage notifications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev",
+        "knuckleswtf/scribe": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Learnbox\\Notifications\\Tests\\": "tests/",
+            "Learnbox\\Notifications\\": "src/",
+            "Learnbox\\Notifications\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Learnbox\\Notifications\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Learnbox\\Notifications\\Providers\\NotificationServiceProvider"
+            ]
+        }
+    },
+  "require": {
+    "ext-soap": "*"
+  }
+}
