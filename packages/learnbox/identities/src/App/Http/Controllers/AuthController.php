@@ -57,8 +57,7 @@ class AuthController extends Controller
                     'role_id' => $role['id'],
                     'username' => explode('@',$googleUser->email)[0],
                     'email' => $googleUser->email,
-                    'google_id'=> $googleUser->id,
-                    'password' => encrypt('123456')
+                    'google_id'=> $googleUser->id
                 ]));
             }
 
@@ -82,8 +81,7 @@ class AuthController extends Controller
     public function login(AuthUserRequest $request)
     {
         $user = $this->userService->registerUser($request['mobile']);
-        
-        return $this->successJsonResponse();
+        return $this->successResponse();
     }
 
 
@@ -106,7 +104,7 @@ class AuthController extends Controller
     public function sendCode(AuthUserRequest $request)
     {      
         $this->userService->sendCode($request['mobile']);
-        return $this->successJsonResponse();     
+        return $this->successResponse();     
     }
 
 
@@ -120,9 +118,9 @@ class AuthController extends Controller
     {
         $info = $this->userService->checkUserCode($request['mobile'], $request['code']);
 
-        return $this->successJsonResponse([
+        return $this->successResponse([
             'token' => $info['token'],
-            'user' => $info['user']
+            'user' => UserResource::make($info['user'])
         ]);
     }
 }

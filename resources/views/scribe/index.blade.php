@@ -183,7 +183,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 24, 2025</li>
+        <li>Last updated: February 25, 2025</li>
     </ul>
 </div>
 
@@ -254,7 +254,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 2a8ddd950fa59ce16062bd9ed6e3186eca577e384c4e90b15f65a141af917885 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 2004ed8a8211b7edaf0c8862cd8e6a24576fb9e4d00cb83c8ca4ceca392a34ee limit 1)&quot;
     }
 }</code>
  </pre>
@@ -333,7 +333,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/files/2"
+    "http://localhost:8000/api/files/10"
 );
 
 const headers = {
@@ -343,7 +343,7 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('alt', 'ihgzookprxnbvl');
+body.append('alt', 'wyrgmshkeowhcxbueh');
 body.append('file', document.querySelector('input[name="file"]').files[0]);
 
 fetch(url, {
@@ -372,7 +372,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d3fb10ea4bdf148c79f9f397bca3995422c4ef151e2f6318aa68c2709f842e00 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 22ecde4bf83c9fee65398842895dada79d94542460b0ea2eb68f7b6a90d425ef limit 1)&quot;
     }
 }</code>
  </pre>
@@ -453,10 +453,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="file_id"                data-endpoint="PUTapi-files--file_id-"
-               value="2"
+               value="10"
                data-component="url">
     <br>
-<p>The ID of the file. Example: <code>2</code></p>
+<p>The ID of the file. Example: <code>10</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -465,10 +465,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="alt"                data-endpoint="PUTapi-files--file_id-"
-               value="ihgzookprxnbvl"
+               value="wyrgmshkeowhcxbueh"
                data-component="body">
     <br>
-<p>Must not be greater than 250 characters. Example: <code>ihgzookprxnbvl</code></p>
+<p>Must not be greater than 250 characters. Example: <code>wyrgmshkeowhcxbueh</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>file</code></b>&nbsp;&nbsp;
@@ -479,7 +479,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Must not be greater than 2048 kilobytes. Example: <code>/private/var/folders/k9/fh7prql52dg1xjgtjny7szd40000gn/T/phphsLW1C</code></p>
+<p>Must be a file. Must not be greater than 2048 kilobytes. Example: <code>/private/var/folders/k9/fh7prql52dg1xjgtjny7szd40000gn/T/phpsLnLrz</code></p>
         </div>
         </form>
 
@@ -497,7 +497,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/files/12"
+    "http://localhost:8000/api/files/20"
 );
 
 const headers = {
@@ -530,7 +530,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = f6858bab9e38a07e12443764206b04b19d2c92876c9eda46ef696649c5e21c56 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 7a32a0bd8fa8194c54f3f4d776e4ddddd56887a4312fbb5998b6e5369aae9af8 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -600,10 +600,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="file_id"                data-endpoint="DELETEapi-files--file_id-"
-               value="12"
+               value="20"
                data-component="url">
     <br>
-<p>The ID of the file. Example: <code>12</code></p>
+<p>The ID of the file. Example: <code>20</code></p>
             </div>
                     </form>
 
@@ -659,7 +659,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = c4ed801745293c0c9023df281e4a61e12c3fe88522dafa81883f77d28589cc3c limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e0d6c6371832557e6bf1f082c8c6fe32ea46cec58c6f2539d3d2c1abb7ba7f3a limit 1)&quot;
     }
 }</code>
  </pre>
@@ -738,7 +738,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/identities/users/recusandae"
+    "http://localhost:8000/api/identities/users/quia"
 );
 
 const headers = {
@@ -748,12 +748,12 @@ const headers = {
 };
 
 let body = {
-    "mobile": "fhhbuc",
-    "email": "lcorkery@example.org",
-    "name": "uwoeotx",
-    "username": "qavdetjvqyetevoaxa",
+    "mobile": "tgvdolg",
+    "email": "dock69@example.com",
+    "name": "oxvnhmnueszntjdreib",
+    "username": "cdjisufegoa",
     "gender": false,
-    "avatar": "xwnrygbagqitinww"
+    "avatar": "cztfgsmibnis"
 };
 
 fetch(url, {
@@ -782,7 +782,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 7d651296a6252416e0bd5d64b5aba17cd30f90b1f3dbbb46173da4270141106f limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 9f88a03224e8dc75c70e18577adacc7f67b490b1e017cf0c6329ee9cb1ddff44 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -867,10 +867,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-identities-users--id-"
-               value="recusandae"
+               value="quia"
                data-component="url">
     <br>
-<p>The ID of the user. Example: <code>recusandae</code></p>
+<p>The ID of the user. Example: <code>quia</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -879,10 +879,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="mobile"                data-endpoint="PUTapi-identities-users--id-"
-               value="fhhbuc"
+               value="tgvdolg"
                data-component="body">
     <br>
-<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>fhhbuc</code></p>
+<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>tgvdolg</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -890,10 +890,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="PUTapi-identities-users--id-"
-               value="lcorkery@example.org"
+               value="dock69@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>lcorkery@example.org</code></p>
+<p>Must be a valid email address. Example: <code>dock69@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
@@ -901,10 +901,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-identities-users--id-"
-               value="uwoeotx"
+               value="oxvnhmnueszntjdreib"
                data-component="body">
     <br>
-<p>Must be at least 3 characters. Must not be greater than 50 characters. Example: <code>uwoeotx</code></p>
+<p>Must be at least 3 characters. Must not be greater than 50 characters. Example: <code>oxvnhmnueszntjdreib</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>username</code></b>&nbsp;&nbsp;
@@ -912,10 +912,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="username"                data-endpoint="PUTapi-identities-users--id-"
-               value="qavdetjvqyetevoaxa"
+               value="cdjisufegoa"
                data-component="body">
     <br>
-<p>Must not be greater than 30 characters. Example: <code>qavdetjvqyetevoaxa</code></p>
+<p>Must not be greater than 30 characters. Example: <code>cdjisufegoa</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -944,10 +944,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="avatar"                data-endpoint="PUTapi-identities-users--id-"
-               value="xwnrygbagqitinww"
+               value="cztfgsmibnis"
                data-component="body">
     <br>
-<p>Must not be greater than 512 characters. Example: <code>xwnrygbagqitinww</code></p>
+<p>Must not be greater than 512 characters. Example: <code>cztfgsmibnis</code></p>
         </div>
         </form>
 
@@ -965,7 +965,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/identities/users/15"
+    "http://localhost:8000/api/identities/users/20"
 );
 
 const headers = {
@@ -982,7 +982,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-identities-users--id-">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (404):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -998,10 +998,8 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;error&quot;: true,
-    &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
-    &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.users&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `users` where `id` = 15 limit 1)&quot;
-    }
+    &quot;message&quot;: &quot;یافت نشد!&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -1070,10 +1068,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-identities-users--id-"
-               value="15"
+               value="20"
                data-component="url">
     <br>
-<p>The ID of the user. Example: <code>15</code></p>
+<p>The ID of the user. Example: <code>20</code></p>
             </div>
                     </form>
 
@@ -1108,7 +1106,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-identities-users-profile">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (404):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1124,10 +1122,8 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;error&quot;: true,
-    &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
-    &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.users&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `users` where `id` = profile limit 1)&quot;
-    }
+    &quot;message&quot;: &quot;یافت نشد!&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -1239,7 +1235,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 681086b6b47fef9a36a6278871b7a0b2863fa2d66caa81e86de98fd8f47975f7 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 7b0d0d0f51ec733922c0cfdf88cfe67ed8e761c7ef7fe1991cc70c192c4bdd7c limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1328,9 +1324,10 @@ const headers = {
 };
 
 let body = {
-    "name": "voluptatem",
+    "name": "natus",
+    "key": "maiores",
     "permissions": [
-        16
+        9
     ]
 };
 
@@ -1360,7 +1357,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = cbb4877be45280f4850753dede9dfb6cb8c518af9f8eb4e48740caacf3884607 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 4cc28c668118ffc09fd93e052b96d27173b66629eaf402d6628fb2a7354bac70 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1441,10 +1438,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-identities-roles"
-               value="voluptatem"
+               value="natus"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>natus</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>key</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="key"                data-endpoint="POSTapi-identities-roles"
+               value="maiores"
+               data-component="body">
+    <br>
+<p>Example: <code>maiores</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permissions</code></b>&nbsp;&nbsp;
@@ -1475,7 +1483,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/identities/roles/6"
+    "http://localhost:8000/api/identities/roles/1"
 );
 
 const headers = {
@@ -1485,9 +1493,9 @@ const headers = {
 };
 
 let body = {
-    "name": "consequuntur",
+    "name": "et",
     "permissions": [
-        20
+        16
     ]
 };
 
@@ -1517,7 +1525,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 5886cebe2480cdf0f4b5f4ec9fbf160e63c849fac1cac6ef1f71d363dae01ab9 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e6f76dc4b519f6e68d730cc04cad662b36a4eb9417b9c601996cba8b47443e9d limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1602,10 +1610,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-identities-roles--id-"
-               value="6"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the role. Example: <code>6</code></p>
+<p>The ID of the role. Example: <code>1</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1614,10 +1622,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-identities-roles--id-"
-               value="consequuntur"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>consequuntur</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permissions</code></b>&nbsp;&nbsp;
@@ -1682,7 +1690,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 570717dfb979098d4fc67f5f5ce419925b49152675ef75446f68654d87949c22 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d76edaf1f606097789368b39663e4866c709591da2d6f94cda173e9b6b1b885f limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1779,25 +1787,33 @@ fetch(url, {
 
 <span id="example-responses-GETapi-identities-auth-google-login">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (302):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+location: https://accounts.google.com/o/oauth2/auth?client_id=431176913210-9kvud5fs5b82hf1669ptfm0ni2iimo88.apps.googleusercontent.com&amp;redirect_uri=http%3A%2F%2Flocalhost%2Fauth%2Fgoogle-callback&amp;scope=openid+profile+email&amp;response_type=code
+content-type: text/html; charset=utf-8
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
 vary: Precognition
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">{
-    &quot;error&quot;: true,
-    &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
-    &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 6dcbc0c2daeadb84a70ba67ab1551c600b9a88bcabc8f25b11222c4a06fc9726 limit 1)&quot;
-    }
-}</code>
+<code class="language-json" style="max-height: 300px;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;url=&#039;https://accounts.google.com/o/oauth2/auth?client_id=431176913210-9kvud5fs5b82hf1669ptfm0ni2iimo88.apps.googleusercontent.com&amp;amp;redirect_uri=http%3A%2F%2Flocalhost%2Fauth%2Fgoogle-callback&amp;amp;scope=openid+profile+email&amp;amp;response_type=code&#039;&quot; /&gt;
+
+        &lt;title&gt;Redirecting to https://accounts.google.com/o/oauth2/auth?client_id=431176913210-9kvud5fs5b82hf1669ptfm0ni2iimo88.apps.googleusercontent.com&amp;amp;redirect_uri=http%3A%2F%2Flocalhost%2Fauth%2Fgoogle-callback&amp;amp;scope=openid+profile+email&amp;amp;response_type=code&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Redirecting to &lt;a href=&quot;https://accounts.google.com/o/oauth2/auth?client_id=431176913210-9kvud5fs5b82hf1669ptfm0ni2iimo88.apps.googleusercontent.com&amp;amp;redirect_uri=http%3A%2F%2Flocalhost%2Fauth%2Fgoogle-callback&amp;amp;scope=openid+profile+email&amp;amp;response_type=code&quot;&gt;https://accounts.google.com/o/oauth2/auth?client_id=431176913210-9kvud5fs5b82hf1669ptfm0ni2iimo88.apps.googleusercontent.com&amp;amp;redirect_uri=http%3A%2F%2Flocalhost%2Fauth%2Fgoogle-callback&amp;amp;scope=openid+profile+email&amp;amp;response_type=code&lt;/a&gt;.
+    &lt;/body&gt;
+&lt;/html&gt;</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-identities-auth-google-login" hidden>
@@ -1899,16 +1915,16 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
 vary: Precognition
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;error&quot;: true,
-    &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
-    &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 397df6636de401c072d60654c5f9a8adaaa6b80ec5b5e60fc4a7f70760bc8ee9 limit 1)&quot;
-    }
+    &quot;message&quot;: &quot;error&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -1996,7 +2012,7 @@ const headers = {
 };
 
 let body = {
-    "mobile": "uwxggnk"
+    "mobile": "tcxfnmsxk"
 };
 
 fetch(url, {
@@ -2009,7 +2025,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-identities-auth-login">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (400):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2017,16 +2033,16 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 55
 vary: Precognition
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;error&quot;: true,
-    &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
-    &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 85860935690e8c6b4f0d7c9b2b8af1907b1e2957880d073d8fcb8eca0b96b4b7 limit 1)&quot;
-    }
+    &quot;message&quot;: &quot;شماره تلفن وارد شده معتبر نیست&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -2106,10 +2122,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="mobile"                data-endpoint="GETapi-identities-auth-login"
-               value="uwxggnk"
+               value="tcxfnmsxk"
                data-component="body">
     <br>
-<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>uwxggnk</code></p>
+<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>tcxfnmsxk</code></p>
         </div>
         </form>
 
@@ -2137,7 +2153,7 @@ const headers = {
 };
 
 let body = {
-    "mobile": "hijplsqdck"
+    "mobile": "dj"
 };
 
 fetch(url, {
@@ -2150,7 +2166,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-identities-auth-send-code">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (400):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2158,16 +2174,16 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 54
 vary: Precognition
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;error&quot;: true,
-    &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
-    &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 949ea71cfd319d2a34a211457e72dd4f314a079801c22d8fe6f52ab997acba24 limit 1)&quot;
-    }
+    &quot;message&quot;: &quot;شماره تلفن وارد شده معتبر نیست&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -2247,10 +2263,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="mobile"                data-endpoint="GETapi-identities-auth-send-code"
-               value="hijplsqdck"
+               value="dj"
                data-component="body">
     <br>
-<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>hijplsqdck</code></p>
+<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>dj</code></p>
         </div>
         </form>
 
@@ -2278,8 +2294,8 @@ const headers = {
 };
 
 let body = {
-    "mobile": "zrkdnwchiqo",
-    "code": "egtvbh"
+    "mobile": "zvqipe",
+    "code": "y"
 };
 
 fetch(url, {
@@ -2292,7 +2308,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-identities-auth-check-code">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (400):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2300,16 +2316,16 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 53
 vary: Precognition
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;error&quot;: true,
-    &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
-    &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 962fab70ff45e2a7333b1fdcb915788c966ce38d6ab89504dba86e54275251e2 limit 1)&quot;
-    }
+    &quot;message&quot;: &quot;شماره تلفن وارد شده معتبر نیست (and 1 more error)&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -2389,10 +2405,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="mobile"                data-endpoint="POSTapi-identities-auth-check-code"
-               value="zrkdnwchiqo"
+               value="zvqipe"
                data-component="body">
     <br>
-<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>zrkdnwchiqo</code></p>
+<p>Must be at least 11 characters. Must not be greater than 11 characters. Example: <code>zvqipe</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>code</code></b>&nbsp;&nbsp;
@@ -2400,10 +2416,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="code"                data-endpoint="POSTapi-identities-auth-check-code"
-               value="egtvbh"
+               value="y"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Must not be greater than 6 characters. Example: <code>egtvbh</code></p>
+<p>Must be at least 6 characters. Must not be greater than 6 characters. Example: <code>y</code></p>
         </div>
         </form>
 
@@ -2454,7 +2470,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 5416b02e65125efe58bf1666e993a89bc6c761dc502d93ed54ae5e4d7b977673 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e22369cf3699b2666bf8369dd22b70fb7dcc1712cea4c0b4a065b4ffd5b81319 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2547,10 +2563,10 @@ const headers = {
 };
 
 let body = {
-    "endpoint": "perspiciatis",
+    "endpoint": "molestiae",
     "keys": {
-        "auth": "voluptates",
-        "p256dh": "accusantium"
+        "auth": "possimus",
+        "p256dh": "at"
     }
 };
 
@@ -2580,7 +2596,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d3b0d206997566ec3a9c34c4c98c6ec58ab6e4d584f3338dc0f20e0ad3cba26d limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 39b7c5260ab9e9d4f764549c6d02b01ca3da60580d57a48a0a9d115627362e0a limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2661,10 +2677,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="endpoint"                data-endpoint="POSTapi-notifications-webpush"
-               value="perspiciatis"
+               value="molestiae"
                data-component="body">
     <br>
-<p>Example: <code>perspiciatis</code></p>
+<p>Example: <code>molestiae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -2681,10 +2697,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="keys.auth"                data-endpoint="POSTapi-notifications-webpush"
-               value="voluptates"
+               value="possimus"
                data-component="body">
     <br>
-<p>Example: <code>voluptates</code></p>
+<p>Example: <code>possimus</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>p256dh</code></b>&nbsp;&nbsp;
@@ -2692,10 +2708,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="keys.p256dh"                data-endpoint="POSTapi-notifications-webpush"
-               value="accusantium"
+               value="at"
                data-component="body">
     <br>
-<p>Example: <code>accusantium</code></p>
+<p>Example: <code>at</code></p>
                     </div>
                                     </details>
         </div>
@@ -2715,7 +2731,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/notifications/logs/19/status"
+    "http://localhost:8000/api/notifications/logs/15/status"
 );
 
 const headers = {
@@ -2725,7 +2741,7 @@ const headers = {
 };
 
 let body = {
-    "status": 2
+    "status": 1
 };
 
 fetch(url, {
@@ -2754,7 +2770,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = dc95f3c77bbe8a0adb16d9aa74b113fa2b8dc76255a15ca02ff75cae8cce9d36 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 0b7f68a27bd9917ad57060a7d0c562ed54b698bc6dfe9a6e2dbd7a1ac535a7f3 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2835,10 +2851,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="notificationLog_id"                data-endpoint="PUTapi-notifications-logs--notificationLog_id--status"
-               value="19"
+               value="15"
                data-component="url">
     <br>
-<p>The ID of the notificationLog. Example: <code>19</code></p>
+<p>The ID of the notificationLog. Example: <code>15</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -2847,10 +2863,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="status"                data-endpoint="PUTapi-notifications-logs--notificationLog_id--status"
-               value="2"
+               value="1"
                data-component="body">
     <br>
-<p>Must be at least 1. Must not be greater than 2. Example: <code>2</code></p>
+<p>Must be at least 1. Must not be greater than 2. Example: <code>1</code></p>
         </div>
         </form>
 
@@ -2878,16 +2894,16 @@ const headers = {
 };
 
 let body = {
-    "limit": 59,
+    "limit": 65,
     "filters": {
-        "template": 1,
+        "template": 18,
         "sent": false,
-        "type": "webpush",
-        "order_by": "created_at",
-        "order_dir": "desc",
-        "search": "sunt",
+        "type": "email",
+        "order_by": "send_at",
+        "order_dir": "asc",
+        "search": "magni",
         "created_at": [
-            "2025-02-24"
+            "2025-02-25"
         ]
     }
 };
@@ -2918,7 +2934,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 5dae2a3e14feecddfb86dbfd0cbeb89f9e487ec2bd6a818efecd620191c37785 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 34be3998981655658803f3eddf157bc8672861f0c7db4c7eb5043b5492a00d38 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2999,10 +3015,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="limit"                data-endpoint="GETapi-notifications"
-               value="59"
+               value="65"
                data-component="body">
     <br>
-<p>Must be at least 5. Example: <code>59</code></p>
+<p>Must be at least 5. Example: <code>65</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -3019,10 +3035,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filters.template"                data-endpoint="GETapi-notifications"
-               value="1"
+               value="18"
                data-component="body">
     <br>
-<p>The <code>id</code> of an existing record in the notification_templates table. Example: <code>1</code></p>
+<p>The <code>id</code> of an existing record in the notification_templates table. Example: <code>18</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>sent</code></b>&nbsp;&nbsp;
@@ -3051,10 +3067,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="filters.type"                data-endpoint="GETapi-notifications"
-               value="webpush"
+               value="email"
                data-component="body">
     <br>
-<p>Example: <code>webpush</code></p>
+<p>Example: <code>email</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>sms</code></li> <li><code>email</code></li> <li><code>webpush</code></li> <li><code>in-app</code></li></ul>
                     </div>
@@ -3064,10 +3080,10 @@ Must be one of:
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="filters.order_by"                data-endpoint="GETapi-notifications"
-               value="created_at"
+               value="send_at"
                data-component="body">
     <br>
-<p>Example: <code>created_at</code></p>
+<p>Example: <code>send_at</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>created_at</code></li> <li><code>send_at</code></li></ul>
                     </div>
@@ -3077,10 +3093,10 @@ Must be one of:
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="filters.order_dir"                data-endpoint="GETapi-notifications"
-               value="desc"
+               value="asc"
                data-component="body">
     <br>
-<p>Example: <code>desc</code></p>
+<p>Example: <code>asc</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>asc</code></li> <li><code>desc</code></li></ul>
                     </div>
@@ -3090,10 +3106,10 @@ Must be one of:
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="filters.search"                data-endpoint="GETapi-notifications"
-               value="sunt"
+               value="magni"
                data-component="body">
     <br>
-<p>Example: <code>sunt</code></p>
+<p>Example: <code>magni</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>created_at</code></b>&nbsp;&nbsp;
@@ -3136,11 +3152,11 @@ const headers = {
 };
 
 let body = {
-    "text": "voluptatem",
+    "text": "dolorem",
     "details": [],
-    "type": "sms",
-    "send_at": "2025-02-24T15:12:08",
-    "image": "dajqutltpsrtjdkqegpqcxruq"
+    "type": "webpush",
+    "send_at": "2025-02-25T09:42:16",
+    "image": "uzsibgelgb"
 };
 
 fetch(url, {
@@ -3169,7 +3185,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 28c353d7fb91e32a0fceb040e6d85e66703f2903b0e1cf23c58ebd484ca462cd limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d483b219888df5dc1afc306030fd96bf787a620079b2b6f1a03f089bedd365dd limit 1)&quot;
     }
 }</code>
  </pre>
@@ -3250,10 +3266,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="text"                data-endpoint="POSTapi-notifications"
-               value="voluptatem"
+               value="dolorem"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>dolorem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;
@@ -3272,10 +3288,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-notifications"
-               value="sms"
+               value="webpush"
                data-component="body">
     <br>
-<p>Example: <code>sms</code></p>
+<p>Example: <code>webpush</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>sms</code></li> <li><code>email</code></li> <li><code>webpush</code></li></ul>
         </div>
@@ -3285,10 +3301,10 @@ Must be one of:
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="send_at"                data-endpoint="POSTapi-notifications"
-               value="2025-02-24T15:12:08"
+               value="2025-02-25T09:42:16"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2025-02-24T15:12:08</code></p>
+<p>Must be a valid date. Example: <code>2025-02-25T09:42:16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -3296,10 +3312,10 @@ Must be one of:
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="image"                data-endpoint="POSTapi-notifications"
-               value="dajqutltpsrtjdkqegpqcxruq"
+               value="uzsibgelgb"
                data-component="body">
     <br>
-<p>Must not be greater than 1024 characters. Example: <code>dajqutltpsrtjdkqegpqcxruq</code></p>
+<p>Must not be greater than 1024 characters. Example: <code>uzsibgelgb</code></p>
         </div>
         </form>
 
@@ -3317,7 +3333,7 @@ Must be one of:
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/notifications/9/status"
+    "http://localhost:8000/api/notifications/6/status"
 );
 
 const headers = {
@@ -3356,7 +3372,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 24c72bd2c89a8806735dff66fb17e7e9a2c84484b0b1a32016930df9dbbcaeaa limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 93f934b6ce08db2820fa7b7afd70682ddff5945804f0106e7102f6ecc483c404 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -3437,10 +3453,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="notification_id"                data-endpoint="PUTapi-notifications--notification_id--status"
-               value="9"
+               value="6"
                data-component="url">
     <br>
-<p>The ID of the notification. Example: <code>9</code></p>
+<p>The ID of the notification. Example: <code>6</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -3470,7 +3486,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/notifications/1"
+    "http://localhost:8000/api/notifications/15"
 );
 
 const headers = {
@@ -3503,7 +3519,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 9ffbece0ae51662a5c0a881b25f38a18ef1ecb8b96ca2105e058f94333a0f98c limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 66e108d1e9811601fc0fcfd0bc2b5945322c772566f8ac79cf501dc6aa71f8f9 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -3573,10 +3589,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-notifications--id-"
-               value="1"
+               value="15"
                data-component="url">
     <br>
-<p>The ID of the notification. Example: <code>1</code></p>
+<p>The ID of the notification. Example: <code>15</code></p>
             </div>
                     </form>
 

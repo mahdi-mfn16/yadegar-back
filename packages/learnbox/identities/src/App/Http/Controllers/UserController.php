@@ -29,8 +29,8 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
-        $user = $this->userService->getUsers();
-        return $this->successJsonResponse(UserResource::make($user));
+        $users = $this->userService->getUsers();
+        return $this->dynamicResponse($users, UserResource::class);
     }
 
    
@@ -41,7 +41,7 @@ class UserController extends Controller
     public function show(User $user)
     {
         $user = $this->userService->show($user['id']);
-        return $this->successJsonResponse(UserResource::make($user));
+        return $this->successResponse(UserResource::make($user));
     }
 
 
@@ -50,25 +50,8 @@ class UserController extends Controller
      */
     public function update(UserUpdateRequest $request)
     {
-        $user = auth('sanctum')->user();
-        $data = $request->all();
-        unset($data['role_id']);
-        $this->userService->update($user, UserDTO::fromModel($user, $data));
-
-        if ($request->hasFile('avatar')) {
-            Uploader::model($user->files->first())
-                ->fileable($user)
-                ->file($request->file('avatar'))
-                ->type('avatar')
-                ->dir('user')
-                ->name($user->full_name)
-                ->upload();
-        }
-
-        return $this->dynamicResponse(
-            $this->userService->show($user->id),
-            UserResource::class
-        );
+        $user = $this->userService->updateProfile($request);
+        return $this->successResponse(UserResource::make($user));
     }
 
 
@@ -80,7 +63,7 @@ class UserController extends Controller
     {
         $userId = auth('sanctum')->id();
         $user = $this->userService->show($userId);
-        return $this->successJsonResponse(UserResource::make($user));
+        return $this->successResponse(UserResource::make($user));
     }
 
 

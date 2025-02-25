@@ -11,6 +11,7 @@ use Learnbox\Base\App\Traits\HasSearch;
 use Learnbox\Base\App\Traits\HasSort;
 use Learnbox\Filesystem\App\Traits\HasFile;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -59,10 +60,10 @@ class User extends Authenticatable implements IModel
     }
 
 
-    public function getFullNameAttribute(): ?string
+
+    public function role()
     {
-        return $this->first_name && $this->last_name ?
-            $this->first_name . ' ' . $this->last_name :
-            null;
+        return $this->belongsTo(Role::class, 'role_id', 'id');
     }
+  
 }

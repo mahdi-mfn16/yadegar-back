@@ -5,6 +5,7 @@ namespace Learnbox\Identities\App\Services;
 use App\Helpers\Helper;
 use App\Services\Sender\SmsSender;
 use Learnbox\Base\App\Services\BaseService;
+use Learnbox\Filesystem\App\Facades\Uploader;
 use Learnbox\Identities\App\Models\DTOs\UserDTO;
 use Learnbox\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
 use Learnbox\Identities\App\Repositories\Interfaces\UserRepositoryInterface;
@@ -31,13 +32,12 @@ class UserService extends BaseService
     {
         $role = $this->roleRepo->getFilteredOne(['key' => 'user']);
         $user = $this->repository->registerUser($mobile, $role['id']);
-
         $code = Helper::generateSmsCode();
         SmsSender::sendSms('authMessage', $mobile, ['token' => $code]);
         
         $this->repository->updateUserCode($mobile, $code);
 
-        return $user;
+        return $this->show($user['id']);
     }
 
 
@@ -60,6 +60,32 @@ class UserService extends BaseService
     {
         return $this->repository->checkUserCode($mobile, $code);
             
+    }
+
+
+
+    public function updateProfile($request)
+    {
+        $user = auth('sanctum')->user();
+        $data = $request->all();
+        unset($data['mobile']);
+        unset($data['role_id']);
+        unset($data['code']);
+        unset($data['email']);
+        unset($data['google_id']);
+        $this->update($user, UserDTO::fromModel($user, $data));
+
+        if ($request->hasFile('avatar')) {
+            Uploader::model($user->files->first())
+                ->fileable($user)
+                ->file($request->file('avatar'))
+                ->type('avatar')
+                ->dir('user')
+                ->name($user->full_name)
+                ->upload();
+        }
+
+        return $this->show($user->id);
     }
 
 

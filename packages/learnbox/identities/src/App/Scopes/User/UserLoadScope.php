@@ -11,4 +11,10 @@ class UserLoadScope extends EagerLoadScope
     {
         return $this->builder->with(['files']);
     }
+
+    public function role(): Builder
+    {
+        return $this->builder->with(['role']);
+    }
+  
 }

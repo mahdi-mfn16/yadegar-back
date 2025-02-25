@@ -10,16 +10,16 @@ use Learnbox\Identities\App\Http\Controllers\AuthController;
 
 Route::group([
     'prefix' => config('IdentitiesConfig.prefix'),
-    'middleware' => config('IdentitiesConfig.middleware')
 ], function() {
 
     // ---- User Access ----
     Route::group([
         'prefix' => '',
+        'middleware' => config('IdentitiesConfig.middleware')
     ], function() {
-        Route::apiResource('users', UserController::class)->only(['index', 'update']);
-        Route::apiResource('users', UserController::class)->only(['show'])->withoutMiddleware('auth:sanctum');
+        Route::apiResource('users', UserController::class)->only(['index', 'update'])->names('users');
         Route::get('/users/profile', [UserController::class, 'getMyInfo'])->name('users.profile');
+        Route::apiResource('users', UserController::class)->only(['show'])->withoutMiddleware('auth:sanctum');
     
         Route::apiResource('roles', RoleController::class)->except(['show', 'destroy']);
     
@@ -30,6 +30,7 @@ Route::group([
     // ---- Auth ----
     Route::group([
         'prefix' => 'auth',
+        'middleware' => ['api']
     ], function() {
 
         Route::get('/google/login', [AuthController::class, 'loginGoogle'])->name('auth.google.login');

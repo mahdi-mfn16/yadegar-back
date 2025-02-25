@@ -26,12 +26,14 @@ class EagerLoadScope
 
             $this->$relation();
         }
+
+        
         return $this->builder;
     }
 
 
-    public function with(): array
+    public function with(): ?array
     {
-        return $this->request->input('with');
+        return $this->request->input('with') ?: [];
     }
 }
