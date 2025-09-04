@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Content\App\Scopes\UserCard;
+namespace Yadegar\Content\App\Scopes\UserCard;
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class UserCardLoadScope extends EagerLoadScope

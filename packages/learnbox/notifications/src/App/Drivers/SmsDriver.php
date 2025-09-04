@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Drivers;
+namespace Yadegar\Notifications\App\Drivers;
 
-use Learnbox\Notifications\App\Drivers\Interfaces\NotificationDriverInterface;
+use Yadegar\Notifications\App\Drivers\Interfaces\NotificationDriverInterface;
 
 class SmsDriver implements NotificationDriverInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Content\App\Repositories;
+namespace Yadegar\Content\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Content\App\Models\Collection;
-use Learnbox\Content\App\Repositories\Interfaces\CollectionRepositoryInterface;
-use Learnbox\Content\App\Scopes\Collection\CollectionFilterScope;
-use Learnbox\Content\App\Scopes\Collection\CollectionLoadScope;
-use Learnbox\Content\App\Scopes\Collection\CollectionSearchScope;
-use Learnbox\Content\App\Scopes\Collection\CollectionSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Content\App\Models\Collection;
+use Yadegar\Content\App\Repositories\Interfaces\CollectionRepositoryInterface;
+use Yadegar\Content\App\Scopes\Collection\CollectionFilterScope;
+use Yadegar\Content\App\Scopes\Collection\CollectionLoadScope;
+use Yadegar\Content\App\Scopes\Collection\CollectionSearchScope;
+use Yadegar\Content\App\Scopes\Collection\CollectionSortScope;
 
 class CollectionRepository extends BaseRepository implements CollectionRepositoryInterface
 {

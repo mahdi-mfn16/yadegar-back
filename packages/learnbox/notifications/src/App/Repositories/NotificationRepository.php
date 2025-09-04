@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Notifications\App\Repositories;
+namespace Yadegar\Notifications\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Notifications\App\Models\Notification;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationRepositoryInterface;
-use Learnbox\Notifications\App\Scopes\Notification\NotificationFilterScope;
-use Learnbox\Notifications\App\Scopes\Notification\NotificationLoadScope;
-use Learnbox\Notifications\App\Scopes\Notification\NotificationSearchScope;
-use Learnbox\Notifications\App\Scopes\Notification\NotificationSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Notifications\App\Models\Notification;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationRepositoryInterface;
+use Yadegar\Notifications\App\Scopes\Notification\NotificationFilterScope;
+use Yadegar\Notifications\App\Scopes\Notification\NotificationLoadScope;
+use Yadegar\Notifications\App\Scopes\Notification\NotificationSearchScope;
+use Yadegar\Notifications\App\Scopes\Notification\NotificationSortScope;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;

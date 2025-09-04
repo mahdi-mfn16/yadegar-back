@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Content\App\Scopes\UserCollection;
+namespace Yadegar\Content\App\Scopes\UserCollection;
 
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class UserCollectionSortScope extends SortScope

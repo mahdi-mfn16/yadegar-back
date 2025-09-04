@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Base\App\Services;
+namespace Yadegar\Base\App\Services;
 
 use Exception;
-use Learnbox\Base\App\Interfaces\IDTO;
+use Yadegar\Base\App\Interfaces\IDTO;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;

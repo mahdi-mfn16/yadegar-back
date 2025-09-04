@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Models\DTOs;
+namespace Yadegar\Notifications\App\Models\DTOs;
 
-use Learnbox\Base\App\Models\BaseDTO;
+use Yadegar\Base\App\Models\BaseDTO;
 
 class NotificationLogDTO extends BaseDTO
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Scopes;
+namespace Yadegar\Filesystem\App\Scopes;
 
-use Learnbox\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\FilterScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class FileFilterScope extends FilterScope

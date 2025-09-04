@@ -1,20 +1,20 @@
 <?php
 
-namespace Learnbox\Content\App\Http\Controllers;
+namespace Yadegar\Content\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Content\App\Models\Collection;
-use Learnbox\Content\App\Models\DTOs\CollectionDTO;
-use Learnbox\Content\App\Http\Requests\Collection\CollectionIndexRequest;
-use Learnbox\Content\App\Http\Requests\Collection\CollectionStoreRequest;
-use Learnbox\Content\App\Http\Requests\Collection\CollectionUpdateRequest;
-use Learnbox\Content\App\Http\Resources\CollectionResource;
-use Learnbox\Content\App\Services\CollectionService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Content\App\Models\Collection;
+use Yadegar\Content\App\Models\DTOs\CollectionDTO;
+use Yadegar\Content\App\Http\Requests\Collection\CollectionIndexRequest;
+use Yadegar\Content\App\Http\Requests\Collection\CollectionStoreRequest;
+use Yadegar\Content\App\Http\Requests\Collection\CollectionUpdateRequest;
+use Yadegar\Content\App\Http\Resources\CollectionResource;
+use Yadegar\Content\App\Services\CollectionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Gate;
 
 /**
- * @group Learnbox\Content
+ * @group Yadegar\Content
  * @subgroup Collection
  */
 class CollectionController extends Controller

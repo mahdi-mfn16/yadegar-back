@@ -1,20 +1,20 @@
 <?php
 
-namespace Learnbox\Learn\App\Http\Controllers;
+namespace Yadegar\Learn\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Learn\App\Models\Box;
-use Learnbox\Learn\App\Models\DTOs\BoxDTO;
-use Learnbox\Learn\App\Http\Requests\Box\BoxIndexRequest;
-use Learnbox\Learn\App\Http\Requests\Box\BoxStoreRequest;
-use Learnbox\Learn\App\Http\Requests\Box\BoxUpdateRequest;
-use Learnbox\Learn\App\Http\Resources\BoxResource;
-use Learnbox\Learn\App\Services\BoxService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Learn\App\Models\Box;
+use Yadegar\Learn\App\Models\DTOs\BoxDTO;
+use Yadegar\Learn\App\Http\Requests\Box\BoxIndexRequest;
+use Yadegar\Learn\App\Http\Requests\Box\BoxStoreRequest;
+use Yadegar\Learn\App\Http\Requests\Box\BoxUpdateRequest;
+use Yadegar\Learn\App\Http\Resources\BoxResource;
+use Yadegar\Learn\App\Services\BoxService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Gate;
 
 /**
- * @group Learnbox\Learn
+ * @group Yadegar\Learn
  * @subgroup Box
  */
 class BoxController extends Controller

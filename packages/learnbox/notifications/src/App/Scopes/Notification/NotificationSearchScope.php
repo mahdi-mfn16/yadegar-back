@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Scopes\Notification;
+namespace Yadegar\Notifications\App\Scopes\Notification;
 
-use Learnbox\Base\App\Scopes\SearchScope;
+use Yadegar\Base\App\Scopes\SearchScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class NotificationSearchScope extends SearchScope

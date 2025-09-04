@@ -1,11 +1,11 @@
 {
-    "name": "learnbox/base",
+    "name": "yadegar/base",
     "description": "Base Modules of Projects",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Learnbox\\Base\\": "src/"
+            "Yadegar\\Base\\": "src/"
         }
     },
     "authors": [

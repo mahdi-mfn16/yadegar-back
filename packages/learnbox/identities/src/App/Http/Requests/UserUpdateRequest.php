@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Identities\App\Http\Requests;
+namespace Yadegar\Identities\App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

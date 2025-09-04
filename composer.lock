@@ -2515,17 +2515,17 @@
             "time": "2024-12-10T19:59:05+00:00"
         },
         {
-            "name": "learnbox/base",
+            "name": "yadegar/base",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "./packages/learnbox/base",
+                "url": "./packages/yadegar/base",
                 "reference": "bf32dffd5948739a49e3baa603012fa5c4c36076"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Learnbox\\Base\\": "src/"
+                    "Yadegar\\Base\\": "src/"
                 }
             },
             "license": [
@@ -2543,11 +2543,11 @@
             }
         },
         {
-            "name": "learnbox/filesystem",
+            "name": "yadegar/filesystem",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "./packages/learnbox/filesystem",
+                "url": "./packages/yadegar/filesystem",
                 "reference": "1ff438e946b325b1bca572d486fc5c36fc3d5d8f"
             },
             "require": {
@@ -2561,20 +2561,20 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Learnbox\\Filesystem\\Providers\\FileSystemServiceProvider"
+                        "Yadegar\\Filesystem\\Providers\\FileSystemServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Learnbox\\Filesystem\\Tests\\": "tests/",
-                    "Learnbox\\Filesystem\\": "src/",
-                    "Learnbox\\Filesystem\\Database\\Factories\\": "database/factories/"
+                    "Yadegar\\Filesystem\\Tests\\": "tests/",
+                    "Yadegar\\Filesystem\\": "src/",
+                    "Yadegar\\Filesystem\\Database\\Factories\\": "database/factories/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Learnbox\\Filesystem\\Tests\\": "tests/"
+                    "Yadegar\\Filesystem\\Tests\\": "tests/"
                 }
             },
             "license": [
@@ -2592,24 +2592,24 @@
             }
         },
         {
-            "name": "learnbox/identities",
+            "name": "yadegar/identities",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "./packages/learnbox/identities",
+                "url": "./packages/yadegar/identities",
                 "reference": "c14f737ba8c25bef7f19fc49162ec0fe2c764e0d"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Learnbox\\Identities\\Providers\\IdentitiesServiceProvider"
+                        "Yadegar\\Identities\\Providers\\IdentitiesServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Learnbox\\Identities\\": "src/"
+                    "Yadegar\\Identities\\": "src/"
                 }
             },
             "license": [
@@ -2627,11 +2627,11 @@
             }
         },
         {
-            "name": "learnbox/notifications",
+            "name": "yadegar/notifications",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "./packages/learnbox/notifications",
+                "url": "./packages/yadegar/notifications",
                 "reference": "5312c442366f749746443973636766106462ceb1"
             },
             "require": {
@@ -2645,20 +2645,20 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Learnbox\\Notifications\\Providers\\NotificationServiceProvider"
+                        "Yadegar\\Notifications\\Providers\\NotificationServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Learnbox\\Notifications\\Tests\\": "tests/",
-                    "Learnbox\\Notifications\\": "src/",
-                    "Learnbox\\Notifications\\Database\\Factories\\": "database/factories/"
+                    "Yadegar\\Notifications\\Tests\\": "tests/",
+                    "Yadegar\\Notifications\\": "src/",
+                    "Yadegar\\Notifications\\Database\\Factories\\": "database/factories/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Learnbox\\Notifications\\Tests\\": "tests/"
+                    "Yadegar\\Notifications\\Tests\\": "tests/"
                 }
             },
             "license": [
@@ -11510,10 +11510,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "learnbox/base": 20,
-        "learnbox/filesystem": 20,
-        "learnbox/identities": 20,
-        "learnbox/notifications": 20,
+        "yadegar/base": 20,
+        "yadegar/filesystem": 20,
+        "yadegar/identities": 20,
+        "yadegar/notifications": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,

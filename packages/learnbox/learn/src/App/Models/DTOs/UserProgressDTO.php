@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Learn\App\Models\DTOs;
+namespace Yadegar\Learn\App\Models\DTOs;
 
-use Learnbox\Base\App\Models\BaseDTO;
+use Yadegar\Base\App\Models\BaseDTO;
 
 class UserProgressDTO extends BaseDTO
 {

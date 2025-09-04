@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Notifications\App\Drivers\Interfaces;
+namespace Yadegar\Notifications\App\Drivers\Interfaces;
 
 interface NotificationDriverInterface
 {

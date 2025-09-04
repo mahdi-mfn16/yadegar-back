@@ -1,10 +1,10 @@
 <?php
 
-use Learnbox\Identities\App\Http\Controllers\PermissionController;
-use Learnbox\Identities\App\Http\Controllers\RoleController;
-use Learnbox\Identities\App\Http\Controllers\UserController;
+use Yadegar\Identities\App\Http\Controllers\PermissionController;
+use Yadegar\Identities\App\Http\Controllers\RoleController;
+use Yadegar\Identities\App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-use Learnbox\Identities\App\Http\Controllers\AuthController;
+use Yadegar\Identities\App\Http\Controllers\AuthController;
 
 
 

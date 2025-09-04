@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Base\App\Traits;
+namespace Yadegar\Base\App\Traits;
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
 use Illuminate\Database\Eloquent\Builder;
 
 trait HasEagerLoad

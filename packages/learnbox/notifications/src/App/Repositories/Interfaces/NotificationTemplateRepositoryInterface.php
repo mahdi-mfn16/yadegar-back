@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Repositories\Interfaces;
+namespace Yadegar\Notifications\App\Repositories\Interfaces;
 
-use Learnbox\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
+use Yadegar\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
 
 interface NotificationTemplateRepositoryInterface extends EloquentRepositoryInterface
 {

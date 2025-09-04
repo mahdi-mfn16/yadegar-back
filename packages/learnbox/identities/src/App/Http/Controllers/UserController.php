@@ -1,16 +1,16 @@
 <?php
 
-namespace Learnbox\Identities\App\Http\Controllers;
+namespace Yadegar\Identities\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Filesystem\App\Facades\Uploader;
-use Learnbox\Identities\App\Http\Requests\UserUpdateRequest;
-use Learnbox\Identities\App\Http\Resources\UserResource;
-use Learnbox\Identities\App\Models\DTOs\UserDTO;
-use Learnbox\Identities\App\Services\UserService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Filesystem\App\Facades\Uploader;
+use Yadegar\Identities\App\Http\Requests\UserUpdateRequest;
+use Yadegar\Identities\App\Http\Resources\UserResource;
+use Yadegar\Identities\App\Models\DTOs\UserDTO;
+use Yadegar\Identities\App\Services\UserService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Learnbox\Identities\App\Models\User;
+use Yadegar\Identities\App\Models\User;
 
 /**
  * @group Identity

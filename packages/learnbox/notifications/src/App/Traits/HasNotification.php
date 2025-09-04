@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Traits;
+namespace Yadegar\Notifications\App\Traits;
 
-use Learnbox\Notifications\App\Models\Notification;
+use Yadegar\Notifications\App\Models\Notification;
 
 trait HasNotification
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Learnbox\Filesystem\App\Http\Controllers\FileController;
+use Yadegar\Filesystem\App\Http\Controllers\FileController;
 use Illuminate\Support\Facades\Route;
 
 Route::group([

@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Identities\App\Repositories;
+namespace Yadegar\Identities\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Identities\App\Models\Permission;
-use Learnbox\Identities\App\Repositories\Interfaces\PermissionRepositoryInterface;
-use Learnbox\Identities\App\Scopes\Permission\PermissionFilterScope;
-use Learnbox\Identities\App\Scopes\Permission\PermissionLoadScope;
-use Learnbox\Identities\App\Scopes\Permission\PermissionSearchScope;
-use Learnbox\Identities\App\Scopes\Permission\PermissionSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Identities\App\Models\Permission;
+use Yadegar\Identities\App\Repositories\Interfaces\PermissionRepositoryInterface;
+use Yadegar\Identities\App\Scopes\Permission\PermissionFilterScope;
+use Yadegar\Identities\App\Scopes\Permission\PermissionLoadScope;
+use Yadegar\Identities\App\Scopes\Permission\PermissionSearchScope;
+use Yadegar\Identities\App\Scopes\Permission\PermissionSortScope;
 
 class PermissionRepository extends BaseRepository implements PermissionRepositoryInterface
 {

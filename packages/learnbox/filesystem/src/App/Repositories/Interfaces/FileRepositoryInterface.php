@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Repositories\Interfaces;
+namespace Yadegar\Filesystem\App\Repositories\Interfaces;
 
-use Learnbox\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
-use Learnbox\Filesystem\App\Models\File;
+use Yadegar\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
+use Yadegar\Filesystem\App\Models\File;
 
 interface FileRepositoryInterface extends EloquentRepositoryInterface
 {

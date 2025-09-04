@@ -1,10 +1,10 @@
 <?php
 
-namespace Learnbox\Notifications\App\Listeners;
+namespace Yadegar\Notifications\App\Listeners;
 
-use Learnbox\Notifications\App\Events\NewNotificationEvent;
-use Learnbox\Notifications\App\Jobs\SendNotificationJob;
-use Learnbox\Notifications\App\Jobs\UpdateNotificationStatusJob;
+use Yadegar\Notifications\App\Events\NewNotificationEvent;
+use Yadegar\Notifications\App\Jobs\SendNotificationJob;
+use Yadegar\Notifications\App\Jobs\UpdateNotificationStatusJob;
 
 class NewNotificationListener
 {

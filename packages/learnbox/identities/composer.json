@@ -1,5 +1,5 @@
 {
-    "name": "learnbox/identities",
+    "name": "yadegar/identities",
     "description": "All Identity Info of CRM Users",
     "type": "library",
     "license": "MIT",
@@ -12,13 +12,13 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Learnbox\\Identities\\": "src/"
+            "Yadegar\\Identities\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Learnbox\\Identities\\Providers\\IdentitiesServiceProvider"
+                "Yadegar\\Identities\\Providers\\IdentitiesServiceProvider"
             ]
         }
     },

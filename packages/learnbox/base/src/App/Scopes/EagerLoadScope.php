@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Base\App\Scopes;
+namespace Yadegar\Base\App\Scopes;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

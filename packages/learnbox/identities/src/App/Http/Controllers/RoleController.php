@@ -1,17 +1,17 @@
 <?php
 
-namespace Learnbox\Identities\App\Http\Controllers;
+namespace Yadegar\Identities\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Base\App\Http\Requests\ServiceRequiredRequest;
-use Learnbox\Identities\App\Http\Requests\RoleStoreRequest;
-use Learnbox\Identities\App\Http\Resources\RoleResource;
-use Learnbox\Identities\App\Models\DTOs\RoleDTO;
-use Learnbox\Identities\App\Models\Role;
-use Learnbox\Identities\App\Services\RoleService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Base\App\Http\Requests\ServiceRequiredRequest;
+use Yadegar\Identities\App\Http\Requests\RoleStoreRequest;
+use Yadegar\Identities\App\Http\Resources\RoleResource;
+use Yadegar\Identities\App\Models\DTOs\RoleDTO;
+use Yadegar\Identities\App\Models\Role;
+use Yadegar\Identities\App\Services\RoleService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Learnbox\Identities\App\Http\Requests\RoleUpdateRequest;
+use Yadegar\Identities\App\Http\Requests\RoleUpdateRequest;
 
 /**
  * @group Identity

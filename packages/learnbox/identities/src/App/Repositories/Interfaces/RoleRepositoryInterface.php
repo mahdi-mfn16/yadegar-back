@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Identities\App\Repositories\Interfaces;
+namespace Yadegar\Identities\App\Repositories\Interfaces;
 
-use Learnbox\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
+use Yadegar\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
 
 interface RoleRepositoryInterface extends EloquentRepositoryInterface
 {

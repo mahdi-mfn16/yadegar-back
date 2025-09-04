@@ -1,13 +1,13 @@
 <?php
 
-namespace Learnbox\Notifications\Providers;
+namespace Yadegar\Notifications\Providers;
 
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationRepositoryInterface;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationTemplateRepositoryInterface;
-use Learnbox\Notifications\App\Repositories\NotificationLogRepository;
-use Learnbox\Notifications\App\Repositories\NotificationRepository;
-use Learnbox\Notifications\App\Repositories\NotificationTemplateRepository;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationRepositoryInterface;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationTemplateRepositoryInterface;
+use Yadegar\Notifications\App\Repositories\NotificationLogRepository;
+use Yadegar\Notifications\App\Repositories\NotificationRepository;
+use Yadegar\Notifications\App\Repositories\NotificationTemplateRepository;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider

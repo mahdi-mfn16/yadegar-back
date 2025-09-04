@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Notifications\App\Drivers;
+namespace Yadegar\Notifications\App\Drivers;
 
 use Illuminate\Notifications\Notification;
 

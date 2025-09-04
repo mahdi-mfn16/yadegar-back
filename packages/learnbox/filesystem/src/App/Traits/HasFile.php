@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Traits;
+namespace Yadegar\Filesystem\App\Traits;
 
-use Learnbox\Filesystem\App\Models\File;
+use Yadegar\Filesystem\App\Models\File;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasFile

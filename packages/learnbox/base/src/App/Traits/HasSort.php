@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Base\App\Traits;
+namespace Yadegar\Base\App\Traits;
 
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Database\Eloquent\Builder;
 
 trait HasSort

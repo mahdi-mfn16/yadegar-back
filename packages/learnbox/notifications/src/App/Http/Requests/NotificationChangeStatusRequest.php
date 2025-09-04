@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Notifications\App\Http\Requests;
+namespace Yadegar\Notifications\App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

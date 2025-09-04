@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Content\App\Services;
+namespace Yadegar\Content\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Content\App\Repositories\Interfaces\CollectionRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Content\App\Repositories\Interfaces\CollectionRepositoryInterface;
 
 class CollectionService extends BaseService
 {

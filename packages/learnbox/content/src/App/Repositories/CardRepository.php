@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Content\App\Repositories;
+namespace Yadegar\Content\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Content\App\Models\Card;
-use Learnbox\Content\App\Repositories\Interfaces\CardRepositoryInterface;
-use Learnbox\Content\App\Scopes\Card\CardFilterScope;
-use Learnbox\Content\App\Scopes\Card\CardLoadScope;
-use Learnbox\Content\App\Scopes\Card\CardSearchScope;
-use Learnbox\Content\App\Scopes\Card\CardSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Content\App\Models\Card;
+use Yadegar\Content\App\Repositories\Interfaces\CardRepositoryInterface;
+use Yadegar\Content\App\Scopes\Card\CardFilterScope;
+use Yadegar\Content\App\Scopes\Card\CardLoadScope;
+use Yadegar\Content\App\Scopes\Card\CardSearchScope;
+use Yadegar\Content\App\Scopes\Card\CardSortScope;
 
 class CardRepository extends BaseRepository implements CardRepositoryInterface
 {

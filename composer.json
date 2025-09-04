@@ -1,7 +1,7 @@
 {
-    "name": "learnbox/laravel-api-boilerplate",
+    "name": "yadegar/laravel-api",
     "type": "project",
-    "description": "Laravel API Boilerplate",
+    "description": "Laravel API",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
@@ -15,10 +15,10 @@
         "laravel/socialite": "^5.18",
         "laravel/telescope": "^4.16",
         "laravel/tinker": "^2.8",
-        "learnbox/base": "@dev",
-        "learnbox/filesystem": "@dev",
-        "learnbox/identities": "@dev",
-        "learnbox/notifications": "@dev",
+        "yadegar/base": "@dev",
+        "yadegar/filesystem": "@dev",
+        "yadegar/identities": "@dev",
+        "yadegar/notifications": "@dev",
         "predis/predis": "^2.2"
     },
     "require-dev": {
@@ -35,19 +35,19 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./packages/learnbox/base"
+            "url": "./packages/yadegar/base"
         },
         {
             "type": "path",
-            "url": "./packages/learnbox/identities"
+            "url": "./packages/yadegar/identities"
         },
         {
             "type": "path",
-            "url": "./packages/learnbox/notifications"
+            "url": "./packages/yadegar/notifications"
         },
         {
             "type": "path",
-            "url": "./packages/learnbox/filesystem"
+            "url": "./packages/yadegar/filesystem"
         }
     ],
     "autoload": {

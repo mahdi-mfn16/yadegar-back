@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Repositories;
+namespace Yadegar\Filesystem\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Filesystem\App\Models\File;
-use Learnbox\Filesystem\App\Repositories\Interfaces\FileRepositoryInterface;
-use Learnbox\Filesystem\App\Scopes\FileFilterScope;
-use Learnbox\Filesystem\App\Scopes\FileLoadScope;
-use Learnbox\Filesystem\App\Scopes\FileSearchScope;
-use Learnbox\Filesystem\App\Scopes\FileSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Filesystem\App\Models\File;
+use Yadegar\Filesystem\App\Repositories\Interfaces\FileRepositoryInterface;
+use Yadegar\Filesystem\App\Scopes\FileFilterScope;
+use Yadegar\Filesystem\App\Scopes\FileLoadScope;
+use Yadegar\Filesystem\App\Scopes\FileSearchScope;
+use Yadegar\Filesystem\App\Scopes\FileSortScope;
 use Illuminate\Database\Eloquent\Collection;
 
 class FileRepository extends BaseRepository implements FileRepositoryInterface

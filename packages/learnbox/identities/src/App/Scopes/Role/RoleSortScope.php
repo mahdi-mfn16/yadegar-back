@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Identities\App\Scopes\Role;
+namespace Yadegar\Identities\App\Scopes\Role;
 
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class RoleSortScope extends SortScope

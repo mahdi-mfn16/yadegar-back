@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Identities\App\Repositories;
+namespace Yadegar\Identities\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Identities\App\Models\Role;
-use Learnbox\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
-use Learnbox\Identities\App\Scopes\Role\RoleFilterScope;
-use Learnbox\Identities\App\Scopes\Role\RoleLoadScope;
-use Learnbox\Identities\App\Scopes\Role\RoleSearchScope;
-use Learnbox\Identities\App\Scopes\Role\RoleSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Identities\App\Models\Role;
+use Yadegar\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
+use Yadegar\Identities\App\Scopes\Role\RoleFilterScope;
+use Yadegar\Identities\App\Scopes\Role\RoleLoadScope;
+use Yadegar\Identities\App\Scopes\Role\RoleSearchScope;
+use Yadegar\Identities\App\Scopes\Role\RoleSortScope;
 
 class RoleRepository extends BaseRepository implements RoleRepositoryInterface
 {

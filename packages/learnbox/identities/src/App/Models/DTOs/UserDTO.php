@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Identities\App\Models\DTOs;
+namespace Yadegar\Identities\App\Models\DTOs;
 
-use Learnbox\Base\App\Models\BaseDTO;
+use Yadegar\Base\App\Models\BaseDTO;
 
 class UserDTO extends BaseDTO
 {

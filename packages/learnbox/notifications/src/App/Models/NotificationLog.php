@@ -1,10 +1,10 @@
 <?php
 
-namespace Learnbox\Notifications\App\Models;
+namespace Yadegar\Notifications\App\Models;
 
-use Learnbox\Base\App\Models\BaseModel;
-use Learnbox\Base\App\Traits\HasDate;
-use Learnbox\Identities\App\Models\User;
+use Yadegar\Base\App\Models\BaseModel;
+use Yadegar\Base\App\Traits\HasDate;
+use Yadegar\Identities\App\Models\User;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**

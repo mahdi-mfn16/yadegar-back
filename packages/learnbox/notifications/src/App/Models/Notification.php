@@ -1,10 +1,10 @@
 <?php
 
-namespace Learnbox\Notifications\App\Models;
+namespace Yadegar\Notifications\App\Models;
 
-use Learnbox\Base\App\Models\BaseModel;
-use Learnbox\Filesystem\App\Traits\HasFile;
-use Learnbox\Identities\App\Models\User;
+use Yadegar\Base\App\Models\BaseModel;
+use Yadegar\Filesystem\App\Traits\HasFile;
+use Yadegar\Identities\App\Models\User;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;

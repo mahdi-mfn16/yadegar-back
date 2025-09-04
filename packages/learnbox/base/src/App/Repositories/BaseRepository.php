@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Base\App\Repositories;
+namespace Yadegar\Base\App\Repositories;
 
-use Learnbox\Base\App\Interfaces\IDTO;
-use Learnbox\Base\App\Interfaces\IModel;
-use Learnbox\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
-use Learnbox\Base\App\Scopes\EagerLoadScope;
-use Learnbox\Base\App\Scopes\FilterScope;
-use Learnbox\Base\App\Scopes\SearchScope;
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Interfaces\IDTO;
+use Yadegar\Base\App\Interfaces\IModel;
+use Yadegar\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\SearchScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;

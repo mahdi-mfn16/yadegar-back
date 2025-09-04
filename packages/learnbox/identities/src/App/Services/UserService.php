@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Identities\App\Services;
+namespace Yadegar\Identities\App\Services;
 
 use App\Helpers\Helper;
 use App\Services\Sender\SmsSender;
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Filesystem\App\Facades\Uploader;
-use Learnbox\Identities\App\Models\DTOs\UserDTO;
-use Learnbox\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
-use Learnbox\Identities\App\Repositories\Interfaces\UserRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Filesystem\App\Facades\Uploader;
+use Yadegar\Identities\App\Models\DTOs\UserDTO;
+use Yadegar\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
+use Yadegar\Identities\App\Repositories\Interfaces\UserRepositoryInterface;
 
 class UserService extends BaseService
 {

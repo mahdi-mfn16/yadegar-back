@@ -1,5 +1,5 @@
 {
-    "name": "learnbox/content",
+    "name": "yadegar/content",
     "description": "",
     "type": "library",
     "license": "MIT",
@@ -12,13 +12,13 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Learnbox\\Content\\": "src/"
+            "Yadegar\\Content\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Learnbox\\Content\\Providers\\ContentServiceProvider"
+                "Yadegar\\Content\\Providers\\ContentServiceProvider"
             ]
         }
     },

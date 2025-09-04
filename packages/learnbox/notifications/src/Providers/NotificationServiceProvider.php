@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\Providers;
+namespace Yadegar\Notifications\Providers;
 
-use Learnbox\Notifications\App\Services\SendNotificationService;
+use Yadegar\Notifications\App\Services\SendNotificationService;
 use Illuminate\Support\ServiceProvider;
 
 class NotificationServiceProvider extends ServiceProvider

@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Base\App\Http\Controllers;
+namespace Yadegar\Base\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Resources\PaginationResource;
+use Yadegar\Base\App\Http\Resources\PaginationResource;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\JsonResponse;

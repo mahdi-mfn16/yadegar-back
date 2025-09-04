@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Scopes\NotificationLog;
+namespace Yadegar\Notifications\App\Scopes\NotificationLog;
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class NotificationLogLoadScope extends EagerLoadScope

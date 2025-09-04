@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Notifications\App\Events;
+namespace Yadegar\Notifications\App\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

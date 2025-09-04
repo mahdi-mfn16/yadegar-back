@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Identities\App\Scopes\User;
+namespace Yadegar\Identities\App\Scopes\User;
 
-use Learnbox\Base\App\Scopes\SearchScope;
+use Yadegar\Base\App\Scopes\SearchScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class UserSearchScope extends SearchScope

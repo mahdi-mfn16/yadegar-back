@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Models;
+namespace Yadegar\Filesystem\App\Models;
 
-use Learnbox\Base\App\Models\BaseModel;
-use Learnbox\Identities\App\Models\User;
+use Yadegar\Base\App\Models\BaseModel;
+use Yadegar\Identities\App\Models\User;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 

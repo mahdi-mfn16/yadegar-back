@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Base\App\Models;
+namespace Yadegar\Base\App\Models;
 
-use Learnbox\Base\App\Interfaces\IDTO;
+use Yadegar\Base\App\Interfaces\IDTO;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Learnbox\Notifications\App\Jobs;
+namespace Yadegar\Notifications\App\Jobs;
 
-use Learnbox\Notifications\App\Models\NotificationLog;
-use Learnbox\Notifications\App\Notifications\PublicNotification;
-use Learnbox\Notifications\App\Services\NotificationLogService;
+use Yadegar\Notifications\App\Models\NotificationLog;
+use Yadegar\Notifications\App\Notifications\PublicNotification;
+use Yadegar\Notifications\App\Services\NotificationLogService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

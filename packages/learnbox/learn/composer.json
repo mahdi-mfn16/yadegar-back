@@ -1,5 +1,5 @@
 {
-    "name": "learnbox/learn",
+    "name": "yadegar/learn",
     "description": "",
     "type": "library",
     "license": "MIT",
@@ -12,13 +12,13 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Learnbox\\Learn\\": "src/"
+            "Yadegar\\Learn\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Learnbox\\Learn\\Providers\\LearnServiceProvider"
+                "Yadegar\\Learn\\Providers\\LearnServiceProvider"
             ]
         }
     },

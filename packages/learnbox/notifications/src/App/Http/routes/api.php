@@ -1,7 +1,7 @@
 <?php
 
-use Learnbox\Notifications\App\Http\Controllers\NotificationController;
-use Learnbox\Notifications\App\Http\Controllers\NotificationLogController;
+use Yadegar\Notifications\App\Http\Controllers\NotificationController;
+use Yadegar\Notifications\App\Http\Controllers\NotificationLogController;
 use Illuminate\Support\Facades\Route;
 
 Route::group([

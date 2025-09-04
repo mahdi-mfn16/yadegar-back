@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Content\Providers;
+namespace Yadegar\Content\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

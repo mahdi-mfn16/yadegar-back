@@ -1,10 +1,10 @@
 <?php
 
-namespace Learnbox\Notifications\App\Notifications;
+namespace Yadegar\Notifications\App\Notifications;
 
-use Learnbox\Notifications\App\Drivers\SmsChannel;
-use Learnbox\Notifications\App\Drivers\SmsDriver;
-use Learnbox\Notifications\App\Models\Notification as NotificationModel;
+use Yadegar\Notifications\App\Drivers\SmsChannel;
+use Yadegar\Notifications\App\Drivers\SmsDriver;
+use Yadegar\Notifications\App\Models\Notification as NotificationModel;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Channels\MailChannel;
 use Illuminate\Notifications\Messages\MailMessage;

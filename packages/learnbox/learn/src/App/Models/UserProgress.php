@@ -1,13 +1,13 @@
 <?php
 
-namespace Learnbox\Learn\App\Models;
+namespace Yadegar\Learn\App\Models;
 
-use Learnbox\Base\App\Models\BaseModel;
-use Learnbox\Base\App\Traits\HasDate;
-use Learnbox\Base\App\Traits\HasEagerLoad;
-use Learnbox\Base\App\Traits\HasFilter;
-use Learnbox\Base\App\Traits\HasSearch;
-use Learnbox\Base\App\Traits\HasSort;
+use Yadegar\Base\App\Models\BaseModel;
+use Yadegar\Base\App\Traits\HasDate;
+use Yadegar\Base\App\Traits\HasEagerLoad;
+use Yadegar\Base\App\Traits\HasFilter;
+use Yadegar\Base\App\Traits\HasSearch;
+use Yadegar\Base\App\Traits\HasSort;
 
 /**
  * @property int $id

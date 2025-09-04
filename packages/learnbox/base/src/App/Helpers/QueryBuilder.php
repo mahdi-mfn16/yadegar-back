@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Base\App\Helpers;
+namespace Yadegar\Base\App\Helpers;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;

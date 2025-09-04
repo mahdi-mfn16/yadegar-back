@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Services;
+namespace Yadegar\Filesystem\App\Services;
 
-use Learnbox\Filesystem\App\Models\DTOs\FileDTO;
-use Learnbox\Filesystem\App\Models\File;
+use Yadegar\Filesystem\App\Models\DTOs\FileDTO;
+use Yadegar\Filesystem\App\Models\File;
 use Exception;
 use Illuminate\Support\Facades\Storage;
 

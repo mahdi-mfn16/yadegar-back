@@ -254,7 +254,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 2004ed8a8211b7edaf0c8862cd8e6a24576fb9e4d00cb83c8ca4ceca392a34ee limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 2004ed8a8211b7edaf0c8862cd8e6a24576fb9e4d00cb83c8ca4ceca392a34ee limit 1)&quot;
     }
 }</code>
  </pre>
@@ -372,7 +372,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 22ecde4bf83c9fee65398842895dada79d94542460b0ea2eb68f7b6a90d425ef limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 22ecde4bf83c9fee65398842895dada79d94542460b0ea2eb68f7b6a90d425ef limit 1)&quot;
     }
 }</code>
  </pre>
@@ -530,7 +530,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 7a32a0bd8fa8194c54f3f4d776e4ddddd56887a4312fbb5998b6e5369aae9af8 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 7a32a0bd8fa8194c54f3f4d776e4ddddd56887a4312fbb5998b6e5369aae9af8 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -659,7 +659,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e0d6c6371832557e6bf1f082c8c6fe32ea46cec58c6f2539d3d2c1abb7ba7f3a limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e0d6c6371832557e6bf1f082c8c6fe32ea46cec58c6f2539d3d2c1abb7ba7f3a limit 1)&quot;
     }
 }</code>
  </pre>
@@ -782,7 +782,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 9f88a03224e8dc75c70e18577adacc7f67b490b1e017cf0c6329ee9cb1ddff44 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 9f88a03224e8dc75c70e18577adacc7f67b490b1e017cf0c6329ee9cb1ddff44 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1235,7 +1235,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 7b0d0d0f51ec733922c0cfdf88cfe67ed8e761c7ef7fe1991cc70c192c4bdd7c limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 7b0d0d0f51ec733922c0cfdf88cfe67ed8e761c7ef7fe1991cc70c192c4bdd7c limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1357,7 +1357,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 4cc28c668118ffc09fd93e052b96d27173b66629eaf402d6628fb2a7354bac70 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 4cc28c668118ffc09fd93e052b96d27173b66629eaf402d6628fb2a7354bac70 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1525,7 +1525,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e6f76dc4b519f6e68d730cc04cad662b36a4eb9417b9c601996cba8b47443e9d limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e6f76dc4b519f6e68d730cc04cad662b36a4eb9417b9c601996cba8b47443e9d limit 1)&quot;
     }
 }</code>
  </pre>
@@ -1690,7 +1690,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d76edaf1f606097789368b39663e4866c709591da2d6f94cda173e9b6b1b885f limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d76edaf1f606097789368b39663e4866c709591da2d6f94cda173e9b6b1b885f limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2470,7 +2470,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e22369cf3699b2666bf8369dd22b70fb7dcc1712cea4c0b4a065b4ffd5b81319 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = e22369cf3699b2666bf8369dd22b70fb7dcc1712cea4c0b4a065b4ffd5b81319 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2596,7 +2596,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 39b7c5260ab9e9d4f764549c6d02b01ca3da60580d57a48a0a9d115627362e0a limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 39b7c5260ab9e9d4f764549c6d02b01ca3da60580d57a48a0a9d115627362e0a limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2770,7 +2770,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 0b7f68a27bd9917ad57060a7d0c562ed54b698bc6dfe9a6e2dbd7a1ac535a7f3 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 0b7f68a27bd9917ad57060a7d0c562ed54b698bc6dfe9a6e2dbd7a1ac535a7f3 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -2934,7 +2934,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 34be3998981655658803f3eddf157bc8672861f0c7db4c7eb5043b5492a00d38 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 34be3998981655658803f3eddf157bc8672861f0c7db4c7eb5043b5492a00d38 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -3185,7 +3185,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d483b219888df5dc1afc306030fd96bf787a620079b2b6f1a03f089bedd365dd limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = d483b219888df5dc1afc306030fd96bf787a620079b2b6f1a03f089bedd365dd limit 1)&quot;
     }
 }</code>
  </pre>
@@ -3372,7 +3372,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 93f934b6ce08db2820fa7b7afd70682ddff5945804f0106e7102f6ecc483c404 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 93f934b6ce08db2820fa7b7afd70682ddff5945804f0106e7102f6ecc483c404 limit 1)&quot;
     }
 }</code>
  </pre>
@@ -3519,7 +3519,7 @@ access-control-allow-origin: *
     &quot;error&quot;: true,
     &quot;message&quot;: &quot;متاسفانه مشکلی در سرور رخ داده است، پس از مدتی دوباره تلاش کنید.&quot;,
     &quot;data&quot;: {
-        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;learnbox.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 66e108d1e9811601fc0fcfd0bc2b5945322c772566f8ac79cf501dc6aa71f8f9 limit 1)&quot;
+        &quot;message&quot;: &quot;SQLSTATE[42S02]: Base table or view not found: 1146 Table &#039;yadegar.personal_access_tokens&#039; doesn&#039;t exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `token` = 66e108d1e9811601fc0fcfd0bc2b5945322c772566f8ac79cf501dc6aa71f8f9 limit 1)&quot;
     }
 }</code>
  </pre>

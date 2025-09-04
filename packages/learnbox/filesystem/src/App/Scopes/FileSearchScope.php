@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Scopes;
+namespace Yadegar\Filesystem\App\Scopes;
 
-use Learnbox\Base\App\Scopes\SearchScope;
+use Yadegar\Base\App\Scopes\SearchScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class FileSearchScope extends SearchScope

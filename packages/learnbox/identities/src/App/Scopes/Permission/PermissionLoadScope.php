@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Identities\App\Scopes\Permission;
+namespace Yadegar\Identities\App\Scopes\Permission;
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
 
 class PermissionLoadScope extends EagerLoadScope
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Learnbox\Notifications\App\Http\Controllers;
+namespace Yadegar\Notifications\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Notifications\App\Http\Requests\NotificationChangeStatusRequest;
-use Learnbox\Notifications\App\Models\NotificationLog;
-use Learnbox\Notifications\App\Services\NotificationLogService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Notifications\App\Http\Requests\NotificationChangeStatusRequest;
+use Yadegar\Notifications\App\Models\NotificationLog;
+use Yadegar\Notifications\App\Services\NotificationLogService;
 use Illuminate\Http\JsonResponse;
 
 /**

@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Filesystem\Providers;
+namespace Yadegar\Filesystem\Providers;
 
-use Learnbox\Filesystem\App\Repositories\FileRepository;
-use Learnbox\Filesystem\App\Repositories\Interfaces\FileRepositoryInterface;
+use Yadegar\Filesystem\App\Repositories\FileRepository;
+use Yadegar\Filesystem\App\Repositories\Interfaces\FileRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider

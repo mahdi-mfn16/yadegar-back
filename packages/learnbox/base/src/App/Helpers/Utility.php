@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Base\App\Helpers;
+namespace Yadegar\Base\App\Helpers;
 
 class Utility
 {

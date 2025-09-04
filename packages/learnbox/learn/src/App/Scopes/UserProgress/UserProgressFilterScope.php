@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Learn\App\Scopes\UserProgress;
+namespace Yadegar\Learn\App\Scopes\UserProgress;
 
-use Learnbox\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\FilterScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class UserProgressFilterScope extends FilterScope

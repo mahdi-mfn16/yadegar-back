@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Base\App\Interfaces;
+namespace Yadegar\Base\App\Interfaces;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Foundation\Http\FormRequest;

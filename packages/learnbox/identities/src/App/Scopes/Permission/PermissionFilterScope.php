@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Identities\App\Scopes\Permission;
+namespace Yadegar\Identities\App\Scopes\Permission;
 
-use Learnbox\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\FilterScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class PermissionFilterScope extends FilterScope

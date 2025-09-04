@@ -1,11 +1,11 @@
 <?php
 
-namespace Learnbox\Base\App\Interfaces;
+namespace Yadegar\Base\App\Interfaces;
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
-use Learnbox\Base\App\Scopes\FilterScope;
-use Learnbox\Base\App\Scopes\SearchScope;
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\SearchScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Database\Eloquent\Builder;

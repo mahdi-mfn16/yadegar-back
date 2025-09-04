@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Models\DTOs;
+namespace Yadegar\Filesystem\App\Models\DTOs;
 
-use Learnbox\Base\App\Models\BaseDTO;
+use Yadegar\Base\App\Models\BaseDTO;
 
 class FileDTO extends BaseDTO
 {

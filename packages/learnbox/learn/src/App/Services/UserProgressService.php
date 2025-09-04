@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Learn\App\Services;
+namespace Yadegar\Learn\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Learn\App\Repositories\Interfaces\UserProgressRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Learn\App\Repositories\Interfaces\UserProgressRepositoryInterface;
 
 class UserProgressService extends BaseService
 {

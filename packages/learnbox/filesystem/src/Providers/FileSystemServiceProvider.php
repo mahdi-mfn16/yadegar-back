@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Filesystem\Providers;
+namespace Yadegar\Filesystem\Providers;
 
-use Learnbox\Filesystem\App\Services\FileUploadService;
+use Yadegar\Filesystem\App\Services\FileUploadService;
 use Illuminate\Support\ServiceProvider;
 
 class FileSystemServiceProvider extends ServiceProvider

@@ -1,13 +1,13 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Http\Controllers;
+namespace Yadegar\Filesystem\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Filesystem\App\Facades\Uploader;
-use Learnbox\Filesystem\App\Http\Requests\FileUpdateRequest;
-use Learnbox\Filesystem\App\Http\Resources\FilesystemResource;
-use Learnbox\Filesystem\App\Models\File;
-use Learnbox\Filesystem\App\Services\FileService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Filesystem\App\Facades\Uploader;
+use Yadegar\Filesystem\App\Http\Requests\FileUpdateRequest;
+use Yadegar\Filesystem\App\Http\Resources\FilesystemResource;
+use Yadegar\Filesystem\App\Models\File;
+use Yadegar\Filesystem\App\Services\FileService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;

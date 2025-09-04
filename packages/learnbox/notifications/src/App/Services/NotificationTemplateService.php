@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Notifications\App\Services;
+namespace Yadegar\Notifications\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationTemplateRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationTemplateRepositoryInterface;
 
 class NotificationTemplateService extends BaseService
 {

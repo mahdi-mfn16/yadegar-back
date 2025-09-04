@@ -1,15 +1,15 @@
 <?php
 
-namespace Learnbox\Identities\App\Models;
+namespace Yadegar\Identities\App\Models;
 
-use Learnbox\Base\App\Helpers\QueryBuilder;
-use Learnbox\Base\App\Interfaces\IModel;
-use Learnbox\Base\App\Traits\HasDate;
-use Learnbox\Base\App\Traits\HasEagerLoad;
-use Learnbox\Base\App\Traits\HasFilter;
-use Learnbox\Base\App\Traits\HasSearch;
-use Learnbox\Base\App\Traits\HasSort;
-use Learnbox\Filesystem\App\Traits\HasFile;
+use Yadegar\Base\App\Helpers\QueryBuilder;
+use Yadegar\Base\App\Interfaces\IModel;
+use Yadegar\Base\App\Traits\HasDate;
+use Yadegar\Base\App\Traits\HasEagerLoad;
+use Yadegar\Base\App\Traits\HasFilter;
+use Yadegar\Base\App\Traits\HasSearch;
+use Yadegar\Base\App\Traits\HasSort;
+use Yadegar\Filesystem\App\Traits\HasFile;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Scopes;
+namespace Yadegar\Filesystem\App\Scopes;
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class FileLoadScope extends EagerLoadScope

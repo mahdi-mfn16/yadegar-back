@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Http\Resources;
+namespace Yadegar\Filesystem\App\Http\Resources;
 
-use Learnbox\Identities\App\Http\Resources\UserResource;
+use Yadegar\Identities\App\Http\Resources\UserResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class FileResource extends JsonResource

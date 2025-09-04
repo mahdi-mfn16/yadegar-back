@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Scopes\NotificationLog;
+namespace Yadegar\Notifications\App\Scopes\NotificationLog;
 
-use Learnbox\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\FilterScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class NotificationLogFilterScope extends FilterScope

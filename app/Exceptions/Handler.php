@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
+use Yadegar\Base\App\Http\Controllers\Controller;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;

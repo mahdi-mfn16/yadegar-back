@@ -1,5 +1,5 @@
 {
-    "name": "learnbox/notifications",
+    "name": "yadegar/notifications",
     "description": "this package manage notifications",
     "type": "library",
     "license": "MIT",
@@ -16,20 +16,20 @@
     },
     "autoload": {
         "psr-4": {
-            "Learnbox\\Notifications\\Tests\\": "tests/",
-            "Learnbox\\Notifications\\": "src/",
-            "Learnbox\\Notifications\\Database\\Factories\\": "database/factories/"
+            "Yadegar\\Notifications\\Tests\\": "tests/",
+            "Yadegar\\Notifications\\": "src/",
+            "Yadegar\\Notifications\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-          "Learnbox\\Notifications\\Tests\\": "tests/"
+          "Yadegar\\Notifications\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Learnbox\\Notifications\\Providers\\NotificationServiceProvider"
+                "Yadegar\\Notifications\\Providers\\NotificationServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Notifications\App\Facades;
+namespace Yadegar\Notifications\App\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Notifications\App\Repositories;
+namespace Yadegar\Notifications\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Notifications\App\Models\NotificationTemplate;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationTemplateRepositoryInterface;
-use Learnbox\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateFilterScope;
-use Learnbox\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateLoadScope;
-use Learnbox\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateSearchScope;
-use Learnbox\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Notifications\App\Models\NotificationTemplate;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationTemplateRepositoryInterface;
+use Yadegar\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateFilterScope;
+use Yadegar\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateLoadScope;
+use Yadegar\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateSearchScope;
+use Yadegar\Notifications\App\Scopes\NotificationTemplate\NotificationTemplateSortScope;
 
 class NotificationTemplateRepository extends BaseRepository implements NotificationTemplateRepositoryInterface
 {

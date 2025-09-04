@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Learn\App\Http\Resources;
+namespace Yadegar\Learn\App\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;

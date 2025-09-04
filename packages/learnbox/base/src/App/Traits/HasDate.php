@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Base\App\Traits;
+namespace Yadegar\Base\App\Traits;
 
-use Learnbox\Base\App\Helpers\Utility;
+use Yadegar\Base\App\Helpers\Utility;
 
 trait HasDate
 {

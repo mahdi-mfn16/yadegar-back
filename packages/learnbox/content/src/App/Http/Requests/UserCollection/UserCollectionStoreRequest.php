@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Content\App\Http\Requests\UserCollection;
+namespace Yadegar\Content\App\Http\Requests\UserCollection;
 
 use Illuminate\Foundation\Http\FormRequest;
 

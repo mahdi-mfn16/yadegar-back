@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Base\App\Traits;
+namespace Yadegar\Base\App\Traits;
 
-use Learnbox\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\FilterScope;
 use Illuminate\Database\Eloquent\Builder;
 
 trait HasFilter

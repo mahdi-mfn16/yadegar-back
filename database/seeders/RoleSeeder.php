@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
-use Learnbox\Identities\App\Models\Role;
+use Yadegar\Identities\App\Models\Role;
 
 class RoleSeeder extends Seeder
 {

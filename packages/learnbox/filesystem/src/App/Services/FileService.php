@@ -1,12 +1,12 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Services;
+namespace Yadegar\Filesystem\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Filesystem\App\Facades\Uploader;
-use Learnbox\Filesystem\App\Models\DTOs\FileDTO;
-use Learnbox\Filesystem\App\Models\File;
-use Learnbox\Filesystem\App\Repositories\Interfaces\FileRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Filesystem\App\Facades\Uploader;
+use Yadegar\Filesystem\App\Models\DTOs\FileDTO;
+use Yadegar\Filesystem\App\Models\File;
+use Yadegar\Filesystem\App\Repositories\Interfaces\FileRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Storage;
 

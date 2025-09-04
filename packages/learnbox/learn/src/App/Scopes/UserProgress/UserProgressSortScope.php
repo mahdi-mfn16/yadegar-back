@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Learn\App\Scopes\UserProgress;
+namespace Yadegar\Learn\App\Scopes\UserProgress;
 
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class UserProgressSortScope extends SortScope

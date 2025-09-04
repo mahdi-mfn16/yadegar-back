@@ -1,5 +1,5 @@
 {
-    "name": "learnbox/filesystem",
+    "name": "yadegar/filesystem",
     "description": "this package help to manage all files",
     "type": "library",
     "license": "MIT",
@@ -16,14 +16,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Learnbox\\Filesystem\\Tests\\": "tests/",
-            "Learnbox\\Filesystem\\": "src/",
-            "Learnbox\\Filesystem\\Database\\Factories\\": "database/factories/"
+            "Yadegar\\Filesystem\\Tests\\": "tests/",
+            "Yadegar\\Filesystem\\": "src/",
+            "Yadegar\\Filesystem\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Learnbox\\Filesystem\\Tests\\": "tests/"
+            "Yadegar\\Filesystem\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Learnbox\\Filesystem\\Providers\\FileSystemServiceProvider"
+                "Yadegar\\Filesystem\\Providers\\FileSystemServiceProvider"
             ]
         }
     }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Base\App\Repositories\Interfaces;
+namespace Yadegar\Base\App\Repositories\Interfaces;
 
-use Learnbox\Base\App\Interfaces\IDTO;
-use Learnbox\Base\App\Interfaces\IModel;
+use Yadegar\Base\App\Interfaces\IDTO;
+use Yadegar\Base\App\Interfaces\IModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;

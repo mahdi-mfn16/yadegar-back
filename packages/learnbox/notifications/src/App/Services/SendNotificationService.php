@@ -1,11 +1,11 @@
 <?php
 
-namespace Learnbox\Notifications\App\Services;
+namespace Yadegar\Notifications\App\Services;
 
-use Learnbox\Filesystem\App\Facades\Uploader;
-use Learnbox\Notifications\App\Events\NewNotificationEvent;
-use Learnbox\Notifications\App\Models\DTOs\NotificationDTO;
-use Learnbox\Notifications\App\Services\NotificationTemplateService;
+use Yadegar\Filesystem\App\Facades\Uploader;
+use Yadegar\Notifications\App\Events\NewNotificationEvent;
+use Yadegar\Notifications\App\Models\DTOs\NotificationDTO;
+use Yadegar\Notifications\App\Services\NotificationTemplateService;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;

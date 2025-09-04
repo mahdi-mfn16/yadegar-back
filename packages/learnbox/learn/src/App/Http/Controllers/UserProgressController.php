@@ -1,20 +1,20 @@
 <?php
 
-namespace Learnbox\Learn\App\Http\Controllers;
+namespace Yadegar\Learn\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Learn\App\Models\UserProgress;
-use Learnbox\Learn\App\Models\DTOs\UserProgressDTO;
-use Learnbox\Learn\App\Http\Requests\UserProgress\UserProgressIndexRequest;
-use Learnbox\Learn\App\Http\Requests\UserProgress\UserProgressStoreRequest;
-use Learnbox\Learn\App\Http\Requests\UserProgress\UserProgressUpdateRequest;
-use Learnbox\Learn\App\Http\Resources\UserProgressResource;
-use Learnbox\Learn\App\Services\UserProgressService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Learn\App\Models\UserProgress;
+use Yadegar\Learn\App\Models\DTOs\UserProgressDTO;
+use Yadegar\Learn\App\Http\Requests\UserProgress\UserProgressIndexRequest;
+use Yadegar\Learn\App\Http\Requests\UserProgress\UserProgressStoreRequest;
+use Yadegar\Learn\App\Http\Requests\UserProgress\UserProgressUpdateRequest;
+use Yadegar\Learn\App\Http\Resources\UserProgressResource;
+use Yadegar\Learn\App\Services\UserProgressService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Gate;
 
 /**
- * @group Learnbox\Learn
+ * @group Yadegar\Learn
  * @subgroup UserProgress
  */
 class UserProgressController extends Controller

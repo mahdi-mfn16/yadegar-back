@@ -1,20 +1,20 @@
 <?php
 
-namespace Learnbox\Content\App\Http\Controllers;
+namespace Yadegar\Content\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Content\App\Models\UserCollection;
-use Learnbox\Content\App\Models\DTOs\UserCollectionDTO;
-use Learnbox\Content\App\Http\Requests\UserCollection\UserCollectionIndexRequest;
-use Learnbox\Content\App\Http\Requests\UserCollection\UserCollectionStoreRequest;
-use Learnbox\Content\App\Http\Requests\UserCollection\UserCollectionUpdateRequest;
-use Learnbox\Content\App\Http\Resources\UserCollectionResource;
-use Learnbox\Content\App\Services\UserCollectionService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Content\App\Models\UserCollection;
+use Yadegar\Content\App\Models\DTOs\UserCollectionDTO;
+use Yadegar\Content\App\Http\Requests\UserCollection\UserCollectionIndexRequest;
+use Yadegar\Content\App\Http\Requests\UserCollection\UserCollectionStoreRequest;
+use Yadegar\Content\App\Http\Requests\UserCollection\UserCollectionUpdateRequest;
+use Yadegar\Content\App\Http\Resources\UserCollectionResource;
+use Yadegar\Content\App\Services\UserCollectionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Gate;
 
 /**
- * @group Learnbox\Content
+ * @group Yadegar\Content
  * @subgroup UserCollection
  */
 class UserCollectionController extends Controller

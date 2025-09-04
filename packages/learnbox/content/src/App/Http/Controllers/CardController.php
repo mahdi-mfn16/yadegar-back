@@ -1,20 +1,20 @@
 <?php
 
-namespace Learnbox\Content\App\Http\Controllers;
+namespace Yadegar\Content\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Content\App\Models\Card;
-use Learnbox\Content\App\Models\DTOs\CardDTO;
-use Learnbox\Content\App\Http\Requests\Card\CardIndexRequest;
-use Learnbox\Content\App\Http\Requests\Card\CardStoreRequest;
-use Learnbox\Content\App\Http\Requests\Card\CardUpdateRequest;
-use Learnbox\Content\App\Http\Resources\CardResource;
-use Learnbox\Content\App\Services\CardService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Content\App\Models\Card;
+use Yadegar\Content\App\Models\DTOs\CardDTO;
+use Yadegar\Content\App\Http\Requests\Card\CardIndexRequest;
+use Yadegar\Content\App\Http\Requests\Card\CardStoreRequest;
+use Yadegar\Content\App\Http\Requests\Card\CardUpdateRequest;
+use Yadegar\Content\App\Http\Resources\CardResource;
+use Yadegar\Content\App\Services\CardService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Gate;
 
 /**
- * @group Learnbox\Content
+ * @group Yadegar\Content
  * @subgroup Card
  */
 class CardController extends Controller

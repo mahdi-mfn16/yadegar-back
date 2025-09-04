@@ -1,10 +1,10 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Policies;
+namespace Yadegar\Filesystem\App\Policies;
 
-use Learnbox\Base\App\Helpers\Utility;
-use Learnbox\Filesystem\App\Models\File;
-use Learnbox\Identities\App\Models\User;
+use Yadegar\Base\App\Helpers\Utility;
+use Yadegar\Filesystem\App\Models\File;
+use Yadegar\Identities\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class FilePolicy

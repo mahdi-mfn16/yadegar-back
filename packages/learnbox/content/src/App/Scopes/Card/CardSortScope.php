@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Content\App\Scopes\Card;
+namespace Yadegar\Content\App\Scopes\Card;
 
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class CardSortScope extends SortScope

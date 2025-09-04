@@ -1,18 +1,18 @@
 <?php
 
-namespace Learnbox\Notifications\App\Http\Controllers;
+namespace Yadegar\Notifications\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Notifications\App\Facades\Notifier;
-use Learnbox\Notifications\App\Http\Requests\NotificationChangeStatusRequest;
-use Learnbox\Notifications\App\Http\Requests\NotificationIndexRequest;
-use Learnbox\Notifications\App\Http\Requests\NotificationStoreRequest;
-use Learnbox\Notifications\App\Http\Requests\NotificationWebpushInitRequest;
-use Learnbox\Notifications\App\Http\Resources\NotificationResource;
-use Learnbox\Notifications\App\Http\Resources\NotificationSingleResource;
-use Learnbox\Notifications\App\Models\Notification;
-use Learnbox\Notifications\App\Services\NotificationService;
-use Learnbox\Notifications\App\Services\SendNotificationService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Notifications\App\Facades\Notifier;
+use Yadegar\Notifications\App\Http\Requests\NotificationChangeStatusRequest;
+use Yadegar\Notifications\App\Http\Requests\NotificationIndexRequest;
+use Yadegar\Notifications\App\Http\Requests\NotificationStoreRequest;
+use Yadegar\Notifications\App\Http\Requests\NotificationWebpushInitRequest;
+use Yadegar\Notifications\App\Http\Resources\NotificationResource;
+use Yadegar\Notifications\App\Http\Resources\NotificationSingleResource;
+use Yadegar\Notifications\App\Models\Notification;
+use Yadegar\Notifications\App\Services\NotificationService;
+use Yadegar\Notifications\App\Services\SendNotificationService;
 use Illuminate\Http\JsonResponse;
 
 /**

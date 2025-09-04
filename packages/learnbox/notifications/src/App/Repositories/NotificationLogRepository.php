@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Notifications\App\Repositories;
+namespace Yadegar\Notifications\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Notifications\App\Models\NotificationLog;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
-use Learnbox\Notifications\App\Scopes\NotificationLog\NotificationLogFilterScope;
-use Learnbox\Notifications\App\Scopes\NotificationLog\NotificationLogLoadScope;
-use Learnbox\Notifications\App\Scopes\NotificationLog\NotificationLogSearchScope;
-use Learnbox\Notifications\App\Scopes\NotificationLog\NotificationLogSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Notifications\App\Models\NotificationLog;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
+use Yadegar\Notifications\App\Scopes\NotificationLog\NotificationLogFilterScope;
+use Yadegar\Notifications\App\Scopes\NotificationLog\NotificationLogLoadScope;
+use Yadegar\Notifications\App\Scopes\NotificationLog\NotificationLogSearchScope;
+use Yadegar\Notifications\App\Scopes\NotificationLog\NotificationLogSortScope;
 
 class NotificationLogRepository extends BaseRepository implements NotificationLogRepositoryInterface
 {

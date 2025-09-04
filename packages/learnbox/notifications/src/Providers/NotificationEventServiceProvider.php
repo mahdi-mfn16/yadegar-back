@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Notifications\Providers;
+namespace Yadegar\Notifications\Providers;
 
-use Learnbox\Notifications\App\Events\NewNotificationEvent;
-use Learnbox\Notifications\App\Listeners\NewNotificationListener;
+use Yadegar\Notifications\App\Events\NewNotificationEvent;
+use Yadegar\Notifications\App\Listeners\NewNotificationListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider;
 
 class NotificationEventServiceProvider extends EventServiceProvider

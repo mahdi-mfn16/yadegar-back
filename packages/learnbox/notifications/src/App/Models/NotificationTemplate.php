@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Notifications\App\Models;
+namespace Yadegar\Notifications\App\Models;
 
-use Learnbox\Base\App\Models\BaseModel;
-use Learnbox\Base\App\Traits\HasDate;
+use Yadegar\Base\App\Models\BaseModel;
+use Yadegar\Base\App\Traits\HasDate;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Notifications\App\Scopes\NotificationLog;
+namespace Yadegar\Notifications\App\Scopes\NotificationLog;
 
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\SortScope;
 
 class NotificationLogSortScope extends SortScope
 {

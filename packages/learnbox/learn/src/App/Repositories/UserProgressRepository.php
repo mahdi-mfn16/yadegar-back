@@ -1,14 +1,14 @@
 <?php
 
-namespace Learnbox\Learn\App\Repositories;
+namespace Yadegar\Learn\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
-use Learnbox\Learn\App\Models\UserProgress;
-use Learnbox\Learn\App\Repositories\Interfaces\UserProgressRepositoryInterface;
-use Learnbox\Learn\App\Scopes\UserProgress\UserProgressFilterScope;
-use Learnbox\Learn\App\Scopes\UserProgress\UserProgressLoadScope;
-use Learnbox\Learn\App\Scopes\UserProgress\UserProgressSearchScope;
-use Learnbox\Learn\App\Scopes\UserProgress\UserProgressSortScope;
+use Yadegar\Base\App\Repositories\BaseRepository;
+use Yadegar\Learn\App\Models\UserProgress;
+use Yadegar\Learn\App\Repositories\Interfaces\UserProgressRepositoryInterface;
+use Yadegar\Learn\App\Scopes\UserProgress\UserProgressFilterScope;
+use Yadegar\Learn\App\Scopes\UserProgress\UserProgressLoadScope;
+use Yadegar\Learn\App\Scopes\UserProgress\UserProgressSearchScope;
+use Yadegar\Learn\App\Scopes\UserProgress\UserProgressSortScope;
 
 class UserProgressRepository extends BaseRepository implements UserProgressRepositoryInterface
 {

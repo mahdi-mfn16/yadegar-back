@@ -1,11 +1,11 @@
 <?php
 
-namespace Learnbox\Identities\App\Http\Controllers;
+namespace Yadegar\Identities\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
-use Learnbox\Base\App\Http\Requests\ServiceRequiredRequest;
-use Learnbox\Identities\App\Http\Resources\PermissionResource;
-use Learnbox\Identities\App\Services\PermissionService;
+use Yadegar\Base\App\Http\Controllers\Controller;
+use Yadegar\Base\App\Http\Requests\ServiceRequiredRequest;
+use Yadegar\Identities\App\Http\Resources\PermissionResource;
+use Yadegar\Identities\App\Services\PermissionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

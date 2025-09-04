@@ -1,12 +1,12 @@
 <?php
 
-namespace Learnbox\Notifications\App\Services;
+namespace Yadegar\Notifications\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Notifications\App\Models\DTOs\NotificationLogDTO;
-use Learnbox\Notifications\App\Models\Notification;
-use Learnbox\Notifications\App\Models\NotificationLog;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Notifications\App\Models\DTOs\NotificationLogDTO;
+use Yadegar\Notifications\App\Models\Notification;
+use Yadegar\Notifications\App\Models\NotificationLog;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
 
 class NotificationLogService extends BaseService
 {

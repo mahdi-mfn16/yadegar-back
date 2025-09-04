@@ -1,11 +1,11 @@
 <?php
 
-namespace Learnbox\Notifications\App\Services;
+namespace Yadegar\Notifications\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Notifications\App\Models\Notification;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
-use Learnbox\Notifications\App\Repositories\Interfaces\NotificationRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Notifications\App\Models\Notification;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationLogRepositoryInterface;
+use Yadegar\Notifications\App\Repositories\Interfaces\NotificationRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 class NotificationService extends BaseService

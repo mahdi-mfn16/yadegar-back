@@ -1,9 +1,9 @@
 <?php
 
-namespace Learnbox\Identities\App\Services;
+namespace Yadegar\Identities\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Identities\App\Repositories\Interfaces\PermissionRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Identities\App\Repositories\Interfaces\PermissionRepositoryInterface;
 
 class PermissionService extends BaseService
 {

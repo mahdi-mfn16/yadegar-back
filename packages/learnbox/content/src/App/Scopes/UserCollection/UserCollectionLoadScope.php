@@ -1,8 +1,8 @@
 <?php
 
-namespace Learnbox\Content\App\Scopes\UserCollection;
+namespace Yadegar\Content\App\Scopes\UserCollection;
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class UserCollectionLoadScope extends EagerLoadScope

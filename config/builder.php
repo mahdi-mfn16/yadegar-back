@@ -114,12 +114,12 @@ return new class extends Migration
 
         'model' => "namespace {PACKAGE_PATH}\App\Models;
 
-use Learnbox\Base\App\Models\BaseModel;
-use Learnbox\Base\App\Traits\HasDate;
-use Learnbox\Base\App\Traits\HasEagerLoad;
-use Learnbox\Base\App\Traits\HasFilter;
-use Learnbox\Base\App\Traits\HasSearch;
-use Learnbox\Base\App\Traits\HasSort;
+use Yadegar\Base\App\Models\BaseModel;
+use Yadegar\Base\App\Traits\HasDate;
+use Yadegar\Base\App\Traits\HasEagerLoad;
+use Yadegar\Base\App\Traits\HasFilter;
+use Yadegar\Base\App\Traits\HasSearch;
+use Yadegar\Base\App\Traits\HasSort;
 
 /**
  * @property int \$id
@@ -133,7 +133,7 @@ class {CLASS_NAME} extends BaseModel
 
         'dto' => "namespace {PACKAGE_PATH}\App\Models\DTOs;
 
-use Learnbox\Base\App\Models\BaseDTO;
+use Yadegar\Base\App\Models\BaseDTO;
 
 class {CLASS_NAME}DTO extends BaseDTO
 {
@@ -144,7 +144,7 @@ class {CLASS_NAME}DTO extends BaseDTO
 
         'repository_interface' => "namespace {PACKAGE_PATH}\App\Repositories\Interfaces;
 
-use Learnbox\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
+use Yadegar\Base\App\Repositories\Interfaces\EloquentRepositoryInterface;
 
 interface {CLASS_NAME}RepositoryInterface extends EloquentRepositoryInterface
 {
@@ -152,7 +152,7 @@ interface {CLASS_NAME}RepositoryInterface extends EloquentRepositoryInterface
 
         'repository' => "namespace {PACKAGE_PATH}\App\Repositories;
 
-use Learnbox\Base\App\Repositories\BaseRepository;
+use Yadegar\Base\App\Repositories\BaseRepository;
 use {PACKAGE_PATH}\App\Models\{CLASS_NAME};
 use {PACKAGE_PATH}\App\Repositories\Interfaces\{CLASS_NAME}RepositoryInterface;
 use {PACKAGE_PATH}\App\Scopes\{CLASS_NAME}\{CLASS_NAME}FilterScope;
@@ -176,7 +176,7 @@ class {CLASS_NAME}Repository extends BaseRepository implements {CLASS_NAME}Repos
 
         'filter_scope' => "namespace {PACKAGE_PATH}\App\Scopes\{CLASS_NAME};
 
-use Learnbox\Base\App\Scopes\FilterScope;
+use Yadegar\Base\App\Scopes\FilterScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class {CLASS_NAME}FilterScope extends FilterScope
@@ -185,7 +185,7 @@ class {CLASS_NAME}FilterScope extends FilterScope
 
         'load_scope' => "namespace {PACKAGE_PATH}\App\Scopes\{CLASS_NAME};
 
-use Learnbox\Base\App\Scopes\EagerLoadScope;
+use Yadegar\Base\App\Scopes\EagerLoadScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class {CLASS_NAME}LoadScope extends EagerLoadScope
@@ -194,7 +194,7 @@ class {CLASS_NAME}LoadScope extends EagerLoadScope
 
         'sort_scope' => "namespace {PACKAGE_PATH}\App\Scopes\{CLASS_NAME};
 
-use Learnbox\Base\App\Scopes\SortScope;
+use Yadegar\Base\App\Scopes\SortScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class {CLASS_NAME}SortScope extends SortScope
@@ -207,7 +207,7 @@ class {CLASS_NAME}SortScope extends SortScope
 
         'search_scope' => "namespace {PACKAGE_PATH}\App\Scopes\{CLASS_NAME};
 
-use Learnbox\Base\App\Scopes\SearchScope;
+use Yadegar\Base\App\Scopes\SearchScope;
 use Illuminate\Database\Eloquent\Builder;
 
 class {CLASS_NAME}SearchScope extends SearchScope
@@ -216,7 +216,7 @@ class {CLASS_NAME}SearchScope extends SearchScope
 
         'service' => "namespace {PACKAGE_PATH}\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
+use Yadegar\Base\App\Services\BaseService;
 use {PACKAGE_PATH}\App\Repositories\Interfaces\{CLASS_NAME}RepositoryInterface;
 
 class {CLASS_NAME}Service extends BaseService
@@ -286,8 +286,8 @@ class {CLASS_NAME}UpdateRequest extends FormRequest
 
         'policy' => "namespace {PACKAGE_PATH}\App\Policies;
 
-use Learnbox\Base\App\Helpers\Utility;
-use Learnbox\Identities\App\Models\User;
+use Yadegar\Base\App\Helpers\Utility;
+use Yadegar\Identities\App\Models\User;
 use {PACKAGE_PATH}\App\Models\{CLASS_NAME};
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
@@ -381,7 +381,7 @@ class {CLASS_NAME}Policy
 
         'controller' => "namespace {PACKAGE_PATH}\App\Http\Controllers;
 
-use Learnbox\Base\App\Http\Controllers\Controller;
+use Yadegar\Base\App\Http\Controllers\Controller;
 use {PACKAGE_PATH}\App\Models\{CLASS_NAME};
 use {PACKAGE_PATH}\App\Models\DTOs\{CLASS_NAME}DTO;
 use {PACKAGE_PATH}\App\Http\Requests\{CLASS_NAME}\{CLASS_NAME}IndexRequest;

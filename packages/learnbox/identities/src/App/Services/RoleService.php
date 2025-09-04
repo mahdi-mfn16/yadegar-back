@@ -1,11 +1,11 @@
 <?php
 
-namespace Learnbox\Identities\App\Services;
+namespace Yadegar\Identities\App\Services;
 
-use Learnbox\Base\App\Services\BaseService;
-use Learnbox\Identities\App\Models\DTOs\RoleDTO;
-use Learnbox\Identities\App\Models\Role;
-use Learnbox\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
+use Yadegar\Base\App\Services\BaseService;
+use Yadegar\Identities\App\Models\DTOs\RoleDTO;
+use Yadegar\Identities\App\Models\Role;
+use Yadegar\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;

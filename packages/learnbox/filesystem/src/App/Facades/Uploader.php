@@ -1,6 +1,6 @@
 <?php
 
-namespace Learnbox\Filesystem\App\Facades;
+namespace Yadegar\Filesystem\App\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

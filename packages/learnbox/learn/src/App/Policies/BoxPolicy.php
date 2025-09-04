@@ -1,10 +1,10 @@
 <?php
 
-namespace Learnbox\Learn\App\Policies;
+namespace Yadegar\Learn\App\Policies;
 
-use Learnbox\Base\App\Helpers\Utility;
-use Learnbox\Identities\App\Models\User;
-use Learnbox\Learn\App\Models\Box;
+use Yadegar\Base\App\Helpers\Utility;
+use Yadegar\Identities\App\Models\User;
+use Yadegar\Learn\App\Models\Box;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 
