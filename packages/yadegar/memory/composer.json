@@ -1,0 +1,26 @@
+{
+    "name": "yadegar/memory",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Yadegar\\Memory\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yadegar\\Memory\\Providers\\MemoryServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}

@@ -15,11 +15,13 @@
         "laravel/socialite": "^5.18",
         "laravel/telescope": "^4.16",
         "laravel/tinker": "^2.8",
+        "opcodesio/log-viewer": "^3.19",
+        "predis/predis": "^2.2",
         "yadegar/base": "@dev",
         "yadegar/filesystem": "@dev",
         "yadegar/identities": "@dev",
-        "yadegar/notifications": "@dev",
-        "predis/predis": "^2.2"
+        "yadegar/memory": "@dev",
+        "yadegar/notifications": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -40,6 +42,10 @@
         {
             "type": "path",
             "url": "./packages/yadegar/identities"
+        },
+        {
+            "type": "path",
+            "url": "./packages/yadegar/memory"
         },
         {
             "type": "path",

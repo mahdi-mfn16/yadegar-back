@@ -1,0 +1,26 @@
+{
+    "name": "yadegar/tag",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Firoozi",
+            "email": "mehdimfn162@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Yadegar\\Tag\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yadegar\\Tag\\Providers\\TagServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}

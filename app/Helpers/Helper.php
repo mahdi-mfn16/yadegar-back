@@ -12,10 +12,14 @@ class Helper
         return rand(100000, 999999);
     }
 
-    public static function generateUserName()
+    public static function generateUserName($id)
     {
-        $string = ['ali', 'omar', 'maryam', 'sahar'];
-        return  $string[array_rand($string)].rand(1000, 9999);
+        $extra  = rand(100000, 999999);     
+
+        $useridFormatted = sprintf('%08d', $id);   // "00123"
+        $extraFormatted  = sprintf('%06d', $extra);   
+
+        return  'user-' . $useridFormatted . $extraFormatted;
     }
 
 
