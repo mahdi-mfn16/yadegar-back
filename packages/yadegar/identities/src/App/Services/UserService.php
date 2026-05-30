@@ -74,7 +74,6 @@ class UserService extends BaseService
         unset($data['email']);
         unset($data['google_id']);
         
-        $data['username'] = isset($data['username']) ? $data['username'] : ($user['username'] ?: Helper::generateUserName($user->id));
         $this->update($user, UserDTO::fromModel($user, $data));
 
         if ($request->hasFile('avatar')) {

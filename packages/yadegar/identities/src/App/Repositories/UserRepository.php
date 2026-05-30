@@ -35,10 +35,15 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
 
     public function registerUser($mobile, $roleId)
     {
-        return $this->model->updateOrCreate([
+        $user = $this->model->updateOrCreate([
             'mobile' => $mobile,
-            'role_id'=> $roleId
+            'role_id'=> $roleId,
         ]);
+        
+        $user->update([
+            'username' => Helper::generateUserName($user->id),
+        ]);
+        return $user;
     }
 
 
