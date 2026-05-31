@@ -46,7 +46,7 @@ class MemoryController extends Controller
      * @param MemoryIndexRequest $request
      * @return JsonResponse
      */
-    public function myMemoryList(MemoryIndexRequest $request)
+    public function getMyMemories(MemoryIndexRequest $request)
     {
         $items = $this->memoryService->getMyMemoryList();
         return $this->dynamicResponse($items, MemoryResource::class);
