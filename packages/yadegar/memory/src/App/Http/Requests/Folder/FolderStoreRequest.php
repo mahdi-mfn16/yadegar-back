@@ -9,7 +9,9 @@ class FolderStoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-
+            'title' => ['required', 'string', 'max:50'],
+            'description' => ['sometimes', 'nullable', 'string'],
+            
         ];
     }
 }

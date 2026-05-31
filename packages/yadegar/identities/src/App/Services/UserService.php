@@ -82,7 +82,7 @@ class UserService extends BaseService
                 ->file($request->file('avatar'))
                 ->type('avatar')
                 ->dir('user')
-                ->alt($user->full_name)
+                ->alt($user->name)
                 ->upload();
         }
 

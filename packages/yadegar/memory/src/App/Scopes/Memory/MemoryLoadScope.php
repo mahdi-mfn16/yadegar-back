@@ -21,4 +21,9 @@ class MemoryLoadScope extends EagerLoadScope
     {
         return $this->builder->with(['tags']);
     }
+
+    public function folder(): Builder
+    {
+        return $this->builder->with(['folder']);
+    }
 }

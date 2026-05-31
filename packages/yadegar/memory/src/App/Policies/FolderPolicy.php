@@ -32,7 +32,9 @@ class FolderPolicy
      */
     public function view(User $user, Folder $folder)
     {
-        //
+        return $user->id === $folder->user_id
+        ? Response::allow()
+        : Response::deny(Utility::getAuthorizeMessage('view', 'folder'));
     }
 
     /**
@@ -55,7 +57,9 @@ class FolderPolicy
      */
     public function update(User $user, Folder  $folder)
     {
-        //
+        return $user->id === $folder->user_id
+        ? Response::allow()
+        : Response::deny(Utility::getAuthorizeMessage('update', 'folder'));
     }
 
     /**
@@ -67,7 +71,9 @@ class FolderPolicy
      */
     public function delete(User $user, Folder  $folder)
     {
-        //
+        return $user->id === $folder->user_id
+        ? Response::allow()
+        : Response::deny(Utility::getAuthorizeMessage('delete', 'folder'));
     }
 
     /**

@@ -4,6 +4,7 @@ namespace Yadegar\Memory\App\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Yadegar\Identities\App\Http\Resources\UserResource;
 
 class FolderResource extends JsonResource
 {
@@ -11,6 +12,10 @@ class FolderResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'title' => $this->title,
+            'description' => $this->description,
+            'user' => UserResource::make($this->whenLoaded('user')),
+            'memories' => MemoryResource::collection($this->whenLoaded('memories')),
         ];
     }
 }

@@ -16,7 +16,7 @@ class MemoryStoreRequest extends FormRequest
             'date' => ['sometimes', 'nullable', 'date_format:Y-m-d'],
             'text' => ['sometimes', 'nullable', 'string'],
             'photo' => ['sometimes', 'nullable', 'mimes:jpg,png,jpeg', 'max:1024'],
-            'audio' => ['sometimes', 'nullable', 'mimes:mp3,m4a,wav,ogg', 'max:16384'],
+            'audio' => ['sometimes', 'nullable', 'mimes:mp3,m4a,wav,ogg,webm', 'max:16384'],
             'video' => ['sometimes', 'nullable', 'mimes:mp4,mkv,avi', 'max:32768'],
         ];
     }

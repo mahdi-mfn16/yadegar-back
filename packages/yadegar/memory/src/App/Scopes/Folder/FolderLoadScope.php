@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Builder;
 
 class FolderLoadScope extends EagerLoadScope
 {
+
+    public function memories(): Builder
+    {
+        return $this->builder->with(['memories' => 'files']);
+    }
 }

@@ -32,7 +32,9 @@ class MemoryPolicy
      */
     public function view(User $user, Memory $memory)
     {
-        //
+        return $user->id === $memory->user_id
+        ? Response::allow()
+        : Response::deny(Utility::getAuthorizeMessage('view', 'memory'));
     }
 
     /**

@@ -33,6 +33,7 @@ class MemoryController extends Controller
      */
     public function index(MemoryIndexRequest $request)
     {
+        // for explore
         // Gate::authorize('viewAny', [Memory::class]);
         $items = $this->memoryService->index();
         return $this->dynamicResponse($items, MemoryResource::class);

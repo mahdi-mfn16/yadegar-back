@@ -77,7 +77,7 @@ class MemoryService extends BaseService
 
         } catch (Exception $th) {
             DB::rollBack();
-            Log::info($th);
+            Log::channel('memory')->info($th);
             return null;
         }
         

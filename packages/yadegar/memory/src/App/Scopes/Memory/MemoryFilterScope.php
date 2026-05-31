@@ -11,4 +11,14 @@ class MemoryFilterScope extends FilterScope
     {
         return $this->builder->where('user_id', $term);
     }
+
+    public function visibility($term): Builder
+    {
+        return $this->builder->where('visibility', $term);
+    }
+
+    public function folder($term): Builder
+    {
+        return $this->builder->where('folder_id', $term);
+    }
 }

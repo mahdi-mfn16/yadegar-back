@@ -27,11 +27,21 @@ class Memory extends BaseModel
         'date',
         'location',
         'visibility', 
-        // private: فقط خودم
-        // family: خودم و خانواده
-        // public: همه با نام من
-        // anonymous: همه بدون نام من
+        // private: فقط خودم میبینم
+        // family: خودم و خانواده ای که جوین فامیلی من شدن میبینن
+        // public: همه عموم با نام من میبینن
+        // anonymous: همه بدون نام من میبینن
     ];
+
+
+   protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($item) {
+            $item->files()->delete();
+        });
+    }
 
 
     public function user()

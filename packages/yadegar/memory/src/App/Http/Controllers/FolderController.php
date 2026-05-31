@@ -12,6 +12,7 @@ use Yadegar\Memory\App\Http\Resources\FolderResource;
 use Yadegar\Memory\App\Services\FolderService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Gate;
+use Yadegar\Memory\App\Services\MemoryService;
 
 /**
  * @group Yadegar\Memory
@@ -20,7 +21,8 @@ use Illuminate\Support\Facades\Gate;
 class FolderController extends Controller
 {
     public function __construct(
-        private readonly FolderService $folderService
+        private readonly FolderService $folderService,
+        private readonly MemoryService $memoryService
     )
     {}
 
@@ -33,8 +35,16 @@ class FolderController extends Controller
      */
     public function index(FolderIndexRequest $request): JsonResponse
     {
-        Gate::authorize('viewAny', [Folder::class]);
+        // for Admin
+        // Gate::authorize('viewAny', [Folder::class]);
         $items = $this->folderService->index();
+        return $this->dynamicResponse($items, FolderResource::class);
+    }
+
+
+    public function getMyFolders(FolderIndexRequest $request): JsonResponse
+    {
+        $items = $this->folderService->getMyFolderList();
         return $this->dynamicResponse($items, FolderResource::class);
     }
 
@@ -61,9 +71,8 @@ class FolderController extends Controller
      */
     public function store(FolderStoreRequest $request): JsonResponse
     {
-        Gate::authorize('create', [Folder::class]);
-        $item = $this->folderService->create(FolderDTO::fromRequest($request));
-        $item = $this->folderService->show($item->id);
+        // Gate::authorize('create', [Folder::class]);
+        $item = $this->folderService->createFolder($request);
         return $this->dynamicResponse($item, FolderResource::class);
     }
 
@@ -78,8 +87,7 @@ class FolderController extends Controller
     public function update(FolderUpdateRequest $request, Folder $folder): JsonResponse
     {
         Gate::authorize('update', $folder);
-        $this->folderService->update($folder, FolderDTO::fromModel($folder, $request->all()));
-        $item = $this->folderService->show($folder->id);
+        $item = $this->folderService->updateFolder($request, $folder);
         return $this->dynamicResponse($item, FolderResource::class);
     }
 
@@ -93,7 +101,9 @@ class FolderController extends Controller
     public function destroy(Folder $folder): JsonResponse
     {
         Gate::authorize('delete', $folder);
-        $this->folderService->delete($folder);
+        
+        $this->folderService->deleteFolder($folder);
+        
         return $this->successResponse();
     }
 }
