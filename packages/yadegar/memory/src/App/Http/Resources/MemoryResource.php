@@ -14,6 +14,7 @@ class MemoryResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'folder_id' => $this->folder_id,
             'title' => $this->title,
             'visibility' => $this->visibility,
             'date' => $this->date,

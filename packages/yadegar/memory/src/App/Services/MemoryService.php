@@ -22,7 +22,7 @@ class MemoryService extends BaseService
     {
         $data = request()->all();
         $data['filters']['user'] = auth('sanctum')->id();
-        $data['with'] = ['files'];
+        $data['with'] = ['files', 'folder'];
         request()->merge($data);
 
         return $this->repository->get();
@@ -32,7 +32,7 @@ class MemoryService extends BaseService
     public function showMemory($memory)
     {
         $data = request()->all();
-        $data['with'] = ['files'];
+        $data['with'] = ['files', 'folder'];
         request()->merge($data);
         return $this->show($memory->id);
     }
@@ -119,6 +119,16 @@ class MemoryService extends BaseService
                     ->dir('memory')
                     ->alt('memory-'.$memory->id)
                     ->upload();
+            } elseif ($request->input('remove_photo')) {
+                $memory->files()->where('type', 'photo')->delete();
+            }
+
+            if ($request->input('remove_audio') && !$request->hasFile('audio')) {
+                $memory->files()->where('type', 'audio')->delete();
+            }
+
+            if ($request->input('remove_video') && !$request->hasFile('video')) {
+                $memory->files()->where('type', 'video')->delete();
             }
 
             DB::commit();
