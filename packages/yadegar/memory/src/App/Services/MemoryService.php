@@ -17,6 +17,17 @@ class MemoryService extends BaseService
         parent::__construct($repository);
     }
 
+    
+
+    public function getExploreList()
+    {
+        $data = request()->all();
+        $data['with'] = ['files', 'folder', 'user'];
+        request()->merge($data);
+
+        return $this->repository->get();
+    }
+
 
     public function getMyMemoryList()
     {

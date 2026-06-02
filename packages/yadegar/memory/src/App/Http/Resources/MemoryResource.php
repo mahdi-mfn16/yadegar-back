@@ -23,7 +23,7 @@ class MemoryResource extends JsonResource
             'photo' => $this->getFile('photo'),
             'audio' => $this->getFile('audio'),
             'video' => $this->getFile('video'),
-            'user' => UserResource::make($this->whenLoaded('user')),
+            'user' => $this->visibility != 'anonymous' ? UserResource::make($this->whenLoaded('user')) : null,
             'folder' => FolderResource::make($this->whenLoaded('folder')),
         ];
     }

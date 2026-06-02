@@ -12,10 +12,12 @@ class MemoryFilterScope extends FilterScope
         return $this->builder->where('user_id', $term);
     }
 
-    public function visibility($term): Builder
+    public function visibility(array $term): Builder
     {
-        return $this->builder->where('visibility', $term);
+        return $this->builder->whereIn('visibility', $term);
     }
+
+
 
     public function folder($term): Builder
     {

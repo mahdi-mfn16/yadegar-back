@@ -9,7 +9,9 @@ class MemoryLoadScope extends EagerLoadScope
 {
     public function user(): Builder
     {
-        return $this->builder->with(['user' => ['files']]);
+        return $this->builder->with(['user' => function($q){
+            $q->with(['files']);
+        } ]);
     }
 
     public function files(): Builder
