@@ -5,6 +5,10 @@ RUN apt-get update && apt-get install -y \
     git curl unzip libzip-dev libxml2-dev supervisor lsof net-tools \
     && docker-php-ext-install zip pdo_mysql soap sockets pcntl
 
+# PHP upload limits — allow up to 40MB for video uploads
+RUN printf "upload_max_filesize = 40M\npost_max_size = 45M\nmax_execution_time = 300\nmax_input_time = 300\nmemory_limit = 256M\n" \
+    > /usr/local/etc/php/conf.d/uploads.ini
+
 # Set the working directory
 WORKDIR /var/www/html
 
