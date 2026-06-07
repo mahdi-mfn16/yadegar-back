@@ -15,9 +15,9 @@ Route::group([
         Route::get('/folders/myself', [FolderController::class, 'getMyFolders'])->name('folders.myself');
         Route::apiResource('folders', FolderController::class)->only(['store','show','update', 'destroy', 'index'])->names('folders');
 
+        Route::get('/memories/family', [MemoryController::class, 'getFamilyMemories'])->name('memories.family');
         Route::get('/memories/myself', [MemoryController::class, 'getMyMemories'])->name('memories.myself');
         Route::apiResource('memories', MemoryController::class)->only(['store', 'update', 'destroy', 'show'])->names('memories');
-        
         
     });
 

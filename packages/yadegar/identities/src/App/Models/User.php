@@ -78,5 +78,26 @@ class User extends Authenticatable implements IModel
     {
         return $this->hasMany(Memory::class, 'user_id', 'id');
     }
+
+
+    public function familyMembers()
+    {
+        return $this->belongsToMany(User::class, 'user_families','user_id', 'member_id');
+    }
+
+    public function family()
+    {
+        return $this->hasMany(Family::class, 'user_id', 'id');
+    }
+
+    public function joinedTo()
+    {
+        return $this->belongsToMany(User::class, 'user_families', 'member_id', 'user_id');
+    }
+
+    public function getMemberIdsAttribute()
+    {
+        return $this->familyMembers()->pluck('id');
+    }
   
 }

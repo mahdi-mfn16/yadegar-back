@@ -29,6 +29,17 @@ class MemoryService extends BaseService
     }
 
 
+    public function getFamilyMemoryList()
+    {
+        $data = request()->all();
+        $data['with'] = ['files', 'folder', 'user'];
+        $data['filters']['family'] = true;
+        request()->merge($data);
+
+        return $this->repository->get();
+    }
+
+
     public function getMyMemoryList()
     {
         $data = request()->all();

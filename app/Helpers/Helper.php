@@ -23,7 +23,7 @@ class Helper
     }
 
 
-    public static function generateChatUniqueId($length = 10)
+    public static function generateUniqueString($length = 10)
     {
         $characters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         $charactersLength = strlen($characters);

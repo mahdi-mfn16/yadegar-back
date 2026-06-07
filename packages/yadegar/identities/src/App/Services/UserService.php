@@ -4,6 +4,7 @@ namespace Yadegar\Identities\App\Services;
 
 use App\Helpers\Helper;
 use App\Services\Sender\SmsSender;
+use Exception;
 use Yadegar\Base\App\Services\BaseService;
 use Yadegar\Filesystem\App\Facades\Uploader;
 use Yadegar\Identities\App\Models\DTOs\UserDTO;
@@ -87,6 +88,59 @@ class UserService extends BaseService
         }
 
         return $this->show($user->id);
+    }
+
+
+    public function inviteToFamily($user, $request)
+    {
+        $userId = $user->id;
+        $name = $request->input('name');
+        $role = $this->roleRepo->getFilteredOne(['key' => 'user']);
+        $member = $this->repository->registerUser($request->input('mobile'), $role['id']);
+
+        $text = Helper::generateUniqueString(16);
+        $link = "https://yadegar.app/join/{$userId}/{$text}";
+        
+        $joined = $user->familyMembers()->where('id', $member->id)->first();
+        
+        if(!$joined){
+            $user->familyMembers()->attach($member->id);
+            $joined = $user->familyMembers()->where('id', $member->id)->first();      
+        }
+
+        $joined->update( $name ? [ 'join_text' => $text, 'name' =>  $name]  : [ 'join_text' => $text ] );
+
+        // SmsSender::sendSms('JoinFamilyMessage', $mobile, ['token' => $link]);
+
+        return $this->show($user['id']);
+
+    }
+
+
+
+    public function joinToFamily($user, $request)
+    {
+        $memberId = $user->id;
+        $text = $request->input('text');
+
+        $joined = $user->joinedTo()->where('id', $memberId)->where('join_text', $text)->first();
+        if($joined){
+            $joined->update([ 'status' => 1, 'join_text' => null ]);
+        }else{
+            throw new Exception('لینک دعوت اشتباه است', 400);
+        }
+        return $this->show($user['id']);
+
+    }
+
+
+    public function removeFromFamily($user, $request)
+    {
+        $memberId = $request->input('member_id');
+        $user->familyMembers()->detach($memberId); 
+        
+        return $this->show($user['id']);
+
     }
 
 

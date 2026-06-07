@@ -54,6 +54,19 @@ class MemoryController extends Controller
 
 
     /**
+     * My Family Memory Index
+     *
+     * @param MemoryIndexRequest $request
+     * @return JsonResponse
+     */
+    public function getFamilyMemories(MemoryIndexRequest $request)
+    {
+        $items = $this->memoryService->getFamilyMemoryList();
+        return $this->dynamicResponse($items, MemoryResource::class);
+    }
+
+
+    /**
      * Memory Single
      *
      * @param Memory $memory

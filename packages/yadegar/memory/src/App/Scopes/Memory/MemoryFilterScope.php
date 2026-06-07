@@ -17,10 +17,21 @@ class MemoryFilterScope extends FilterScope
         return $this->builder->whereIn('visibility', $term);
     }
 
+    public function family($term): Builder
+    {
+        return $this->builder->whereHas('user_id', auth('sanctum')->user()->member_ids);
+    }
+
 
 
     public function folder($term): Builder
     {
         return $this->builder->where('folder_id', $term);
+    }
+
+
+    public function not_own($term): Builder
+    {
+        return $this->builder->where('user_id', '!=', auth('sanctum')->id());
     }
 }

@@ -10,13 +10,16 @@ use Yadegar\Identities\App\Models\DTOs\UserDTO;
 use Yadegar\Identities\App\Services\UserService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Yadegar\Identities\App\Http\Requests\AuthUserRequest;
+use Yadegar\Identities\App\Http\Resources\FamilyResource;
+use Yadegar\Identities\App\Models\Family;
 use Yadegar\Identities\App\Models\User;
 
 /**
  * @group Identity
  * @subgroup User
  */
-class UserController extends Controller
+class FamilyController extends Controller
 {
     public function __construct(
         private readonly UserService $userService
@@ -27,30 +30,43 @@ class UserController extends Controller
      * User list
      *
      */
-    public function index(Request $request)
+    public function getUserFamily(Request $request)
     {
-        $users = $this->userService->getUsers();
-        return $this->dynamicResponse($users, UserResource::class);
+        $families = auth('sanctum')->user()->family;
+        return $this->dynamicResponse($families, FamilyResource::class);
     }
 
-   
     /**
-     * User show
+     * Update family member name 
      *
      */
-    public function show(User $user)
+    public function updateFamilyMember(Request $request, Family $family)
     {
-        $user = $this->userService->show($user['id']);
+        $family->update(['name' => $request->input('name')]);
+        return $this->successResponse([]);
+    }
+
+
+     /**
+     * User my Info
+     *
+     */
+    public function inviteToFamily(AuthUserRequest $request)
+    {
+        $user = auth('sanctum')->user();
+        $user = $this->userService->inviteToFamily($user, $request);
         return $this->successResponse(UserResource::make($user));
     }
 
 
     /**
-     * User Update
+     * User my Info
+     *
      */
-    public function update(UserUpdateRequest $request)
+    public function joinToFamily()
     {
-        $user = $this->userService->updateProfile($request);
+        $userId = auth('sanctum')->id();
+        $user = $this->userService->joinToFamily($userId);
         return $this->successResponse(UserResource::make($user));
     }
 
@@ -59,12 +75,16 @@ class UserController extends Controller
      * User my Info
      *
      */
-    public function getMyInfo()
+    public function removeFromFamily()
     {
         $userId = auth('sanctum')->id();
         $user = $this->userService->show($userId);
         return $this->successResponse(UserResource::make($user));
     }
+
+
+
+ 
 
 
 }
