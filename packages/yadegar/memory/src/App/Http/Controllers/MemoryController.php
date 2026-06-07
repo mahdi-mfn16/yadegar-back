@@ -62,6 +62,7 @@ class MemoryController extends Controller
     public function getFamilyMemories(MemoryIndexRequest $request)
     {
         $items = $this->memoryService->getFamilyMemoryList();
+        info($items);
         return $this->dynamicResponse($items, MemoryResource::class);
     }
 

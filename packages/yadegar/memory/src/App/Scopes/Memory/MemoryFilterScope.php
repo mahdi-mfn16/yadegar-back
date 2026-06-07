@@ -19,7 +19,7 @@ class MemoryFilterScope extends FilterScope
 
     public function family($term): Builder
     {
-        return $this->builder->whereHas('user_id', auth('sanctum')->user()->member_ids);
+        return $this->builder->whereIn('user_id', auth('sanctum')->user()->joined_by_ids);
     }
 
 

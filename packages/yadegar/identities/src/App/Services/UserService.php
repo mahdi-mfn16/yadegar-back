@@ -100,7 +100,7 @@ class UserService extends BaseService
         $member = $this->repository->registerUser($request->input('mobile'), $role['id']);
 
         $text = Helper::generateUniqueString(16);
-        $link = "https://yadegar.app/join/{$userId}/{$text}";
+        $link = env('FRONT_URL')."/join/{$userId}/{$text}";
         
         $familyRecord = Family::where('user_id', $user->id)->where('member_id', $member->id)->first();
 

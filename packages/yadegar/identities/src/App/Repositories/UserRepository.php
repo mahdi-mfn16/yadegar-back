@@ -40,9 +40,12 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
             'role_id'=> $roleId,
         ]);
         
-        $user->update([
-            'username' => Helper::generateUserName($user->id),
-        ]);
+        if(!$user->username){
+            $user->update([
+                'username' => Helper::generateUserName($user->id),
+            ]);
+        }
+        
         return $user;
     }
 
