@@ -14,6 +14,7 @@ class FamilyResource extends JsonResource
             'name' => $this->name,
             'mobile' => $this->member->mobile,
             'status' => $this->status,
+            'member_id' => $this->member_id,
         ];
     }
 }
