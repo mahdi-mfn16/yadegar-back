@@ -44,7 +44,7 @@ class Family extends BaseModel
 
     public function user()
     {
-        return $this->hasMany(User::class, 'user_id', 'id');
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
 

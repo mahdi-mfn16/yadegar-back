@@ -8,6 +8,7 @@ use Exception;
 use Yadegar\Base\App\Services\BaseService;
 use Yadegar\Filesystem\App\Facades\Uploader;
 use Yadegar\Identities\App\Models\DTOs\UserDTO;
+use Yadegar\Identities\App\Models\Family;
 use Yadegar\Identities\App\Repositories\Interfaces\RoleRepositoryInterface;
 use Yadegar\Identities\App\Repositories\Interfaces\UserRepositoryInterface;
 
@@ -101,14 +102,14 @@ class UserService extends BaseService
         $text = Helper::generateUniqueString(16);
         $link = "https://yadegar.app/join/{$userId}/{$text}";
         
-        $joined = $user->familyMembers()->where('id', $member->id)->first();
-        
-        if(!$joined){
+        $familyRecord = Family::where('user_id', $user->id)->where('member_id', $member->id)->first();
+
+        if(!$familyRecord){
             $user->familyMembers()->attach($member->id);
-            $joined = $user->familyMembers()->where('id', $member->id)->first();      
+            $familyRecord = Family::where('user_id', $user->id)->where('member_id', $member->id)->first();     
         }
 
-        $joined->update( $name ? [ 'join_text' => $text, 'name' =>  $name]  : [ 'join_text' => $text ] );
+        $familyRecord->update( $name ? [ 'join_text' => $text, 'name' =>  $name]  : [ 'join_text' => $text ] );
 
         // SmsSender::sendSms('JoinFamilyMessage', $mobile, ['token' => $link]);
 
@@ -123,9 +124,9 @@ class UserService extends BaseService
         $memberId = $user->id;
         $text = $request->input('text');
 
-        $joined = $user->joinedTo()->where('id', $memberId)->where('join_text', $text)->first();
-        if($joined){
-            $joined->update([ 'status' => 1, 'join_text' => null ]);
+        $familyRecord = Family::where('member_id', $memberId)->where('join_text', $text)->first();
+        if($familyRecord){
+            $familyRecord->update([ 'status' => 1, 'join_text' => null ]);
         }else{
             throw new Exception('لینک دعوت اشتباه است', 400);
         }

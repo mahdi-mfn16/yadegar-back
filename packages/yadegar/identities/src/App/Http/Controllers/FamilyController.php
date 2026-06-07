@@ -63,10 +63,10 @@ class FamilyController extends Controller
      * User my Info
      *
      */
-    public function joinToFamily()
+    public function joinToFamily(Request $request)
     {
-        $userId = auth('sanctum')->id();
-        $user = $this->userService->joinToFamily($userId);
+        $user = auth('sanctum')->user();
+        $user = $this->userService->joinToFamily($user, $request);
         return $this->successResponse(UserResource::make($user));
     }
 
@@ -75,10 +75,10 @@ class FamilyController extends Controller
      * User my Info
      *
      */
-    public function removeFromFamily()
+    public function removeFromFamily(Request $request)
     {
-        $userId = auth('sanctum')->id();
-        $user = $this->userService->show($userId);
+        $user = auth('sanctum')->user();
+        $user = $this->userService->removeFromFamily($user, $request);
         return $this->successResponse(UserResource::make($user));
     }
 

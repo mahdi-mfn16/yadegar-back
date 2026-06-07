@@ -17,7 +17,7 @@ Route::group([
         'middleware' => config('IdentitiesConfig.middleware')
     ], function() {
 
-        Route::put('/families/list', [FamilyController::class, 'getUserFamily'])->name('families.update');
+        Route::get('/families/list', [FamilyController::class, 'getUserFamily'])->name('families.list');
         Route::post('/families/invite', [FamilyController::class, 'inviteToFamily'])->name('families.invite');
         Route::put('/families/join', [FamilyController::class, 'joinToFamily'])->name('families.join');
         Route::put('/families/{family}', [FamilyController::class, 'updateFamilyMember'])->name('families.update');
