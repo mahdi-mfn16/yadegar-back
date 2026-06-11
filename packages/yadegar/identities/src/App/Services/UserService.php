@@ -111,7 +111,7 @@ class UserService extends BaseService
 
         $familyRecord->update( $name ? [ 'join_text' => $text, 'name' =>  $name]  : [ 'join_text' => $text ] );
 
-        // SmsSender::sendSms('JoinFamilyMessage', $mobile, ['token' => $link]);
+        // SmsSender::sendSms('joinFamilyMessage', $mobile, ['token' => $link]);
 
         return $this->show($user['id']);
 

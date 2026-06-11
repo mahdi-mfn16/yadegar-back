@@ -1,66 +1,228 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Yadegar — Backend API
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+RESTful API for the Yadegar memory-journaling platform, built with Laravel 10 and a modular package architecture.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Tech Stack
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+| Layer | Technology |
+|-------|-----------|
+| Framework | Laravel 10 + PHP 8.2 |
+| Auth | Laravel Sanctum (token-based) |
+| Database | MySQL |
+| Cache / Queue | Redis via Predis |
+| File Storage | Custom `Uploader` facade |
+| SMS | Kavenegar |
+| Web Push | laravel-notification-channels/webpush |
+| API Docs | Scribe |
+| Dev Tools | Laravel Telescope, Log Viewer |
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Architecture
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+All domain logic lives in local Composer packages under `packages/yadegar/`. The Laravel shell (`app/`) contains no business logic — it only bootstraps the framework and registers packages.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+```
+yadegar-back/
+├── app/                    Laravel shell — helpers.php only
+├── packages/
+│   └── yadegar/
+│       ├── base/           Abstract base classes — no domain logic
+│       ├── identities/     Auth, Users, Roles, Permissions, Family
+│       ├── memory/         Memories, Folders
+│       ├── filesystem/     File upload via Uploader facade
+│       ├── notifications/  SMS + WebPush
+│       └── tag/            Tagging (in development)
+├── docker-compose.yml
+├── Dockerfile
+└── nginx.conf
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Package Internal Structure
 
-## Laravel Sponsors
+Every package follows an identical layout:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```
+{package}/
+├── composer.json
+├── src/
+│   ├── App/
+│   │   ├── Http/
+│   │   │   ├── Controllers/     extend base Controller
+│   │   │   ├── Requests/        Index / Store / Update per model
+│   │   │   ├── Resources/       extend CompactResource or JsonResource
+│   │   │   └── routes/api.php
+│   │   ├── Models/
+│   │   │   ├── {Model}.php      extend BaseModel
+│   │   │   └── DTOs/
+│   │   │       └── {Model}DTO.php    fromRequest() + fromModel()
+│   │   ├── Repositories/
+│   │   │   ├── Interfaces/{Model}RepositoryInterface.php
+│   │   │   └── {Model}Repository.php
+│   │   ├── Services/
+│   │   │   └── {Model}Service.php
+│   │   ├── Scopes/{Model}/      Filter / Sort / Search / Load
+│   │   └── Policies/
+│   ├── Providers/
+│   │   ├── {Package}ServiceProvider.php
+│   │   └── RepositoryServiceProvider.php
+│   └── config/{Package}Config.php
+└── database/migrations/
+```
 
-### Premium Partners
+### Layer Responsibilities
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+| Layer | Responsibility |
+|-------|---------------|
+| Controller | Receive request → call service → return response. No business logic. |
+| Service | All business logic. Calls repository only — no direct Eloquent. |
+| Repository | Data access layer. Eloquent queries only — no business logic. |
+| DTO | Carries validated data between layers. Never `$request->all()` into `create()`. |
+| Scope | Filter / Sort / Search / Load — applied via `request()` inputs. |
+| Policy | Authorization — called with `Gate::authorize()` in controllers. |
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## API Reference
 
-## Code of Conduct
+All routes are versioned and prefixed per package config. Protected routes require `Authorization: Bearer {token}`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Auth & Identities
 
-## Security Vulnerabilities
+| Method | Path | Auth | Description |
+|--------|------|:----:|-------------|
+| GET | `/api/v1/auth/send-code` | — | Send OTP to phone number |
+| POST | `/api/v1/auth/check-code` | — | Verify OTP and receive Sanctum token |
+| GET | `/api/v1/auth/logout` | ✓ | Invalidate current token |
+| GET | `/api/v1/users` | ✓ | List users |
+| GET | `/api/v1/users/profile` | ✓ | Get authenticated user info |
+| PUT | `/api/v1/users/{id}` | ✓ | Update own profile |
+| GET | `/api/v1/families/list` | ✓ | Get family circle members |
+| POST | `/api/v1/families/invite` | ✓ | Invite someone to family |
+| PUT | `/api/v1/families/join` | ✓ | Accept a family invitation |
+| PUT | `/api/v1/families/{family}` | ✓ | Update a member's settings |
+| DELETE | `/api/v1/families/remove` | ✓ | Remove a member from family |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Memory & Folders
+
+| Method | Path | Auth | Description |
+|--------|------|:----:|-------------|
+| GET | `/api/v1/memories` | — | Public memories (Explore feed) |
+| GET | `/api/v1/memories/family` | ✓ | Family circle memories |
+| GET | `/api/v1/memories/myself` | ✓ | Own memories |
+| GET | `/api/v1/memories/{id}` | ✓ | Single memory |
+| POST | `/api/v1/memories` | ✓ | Create memory |
+| PUT | `/api/v1/memories/{id}` | ✓ | Update memory |
+| DELETE | `/api/v1/memories/{id}` | ✓ | Delete memory |
+| GET | `/api/v1/folders/myself` | ✓ | Get own folders |
+| GET | `/api/v1/folders/{id}` | ✓ | Single folder |
+| POST | `/api/v1/folders` | ✓ | Create folder |
+| PUT | `/api/v1/folders/{id}` | ✓ | Update folder |
+| DELETE | `/api/v1/folders/{id}` | ✓ | Delete folder |
+
+### Response Shape
+
+```jsonc
+// Collection
+{ "error": false, "data": { "items": [ ... ] } }
+
+// Single item
+{ "error": false, "data": { "item": { ... } } }
+
+// Success with no body
+{ "error": false, "data": {} }
+
+// Error
+{ "error": true, "message": "Unauthenticated." }
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Docker + Docker Compose
+- A shared external Docker network named `shared_net`
+
+```bash
+docker network create shared_net
+```
+
+### Setup
+
+```bash
+# 1. Copy environment file
+cp .env.example .env
+
+# 2. Start containers
+docker compose up -d
+
+# 3. Install PHP dependencies (first run only)
+docker exec yadegar_app composer install
+
+# 4. Generate application key
+docker exec yadegar_app php artisan key:generate
+
+# 5. Run migrations
+docker exec yadegar_app php artisan migrate --seed
+```
+
+The API will be available at **`http://localhost:8002`**.
+
+### Key Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `APP_KEY` | Generated by `artisan key:generate` |
+| `DB_HOST` | MySQL host |
+| `DB_DATABASE` | Database name |
+| `DB_USERNAME` / `DB_PASSWORD` | MySQL credentials |
+| `REDIS_HOST` | Redis host |
+| `SANCTUM_STATEFUL_DOMAINS` | Allowed frontend domains |
+| `KAVENEGAR_APIKEY` | SMS gateway API key |
+
+---
+
+## File Uploads
+
+Files go through the `Uploader` facade from the `filesystem` package. The Docker image allows uploads up to **40 MB**.
+
+```php
+// On create
+Uploader::fileable($model)
+    ->file($request->file('photo'))
+    ->type('photo')
+    ->dir('memory')
+    ->alt('...')
+    ->upload();
+
+// On update (replaces the existing file)
+Uploader::model($existingFile)
+    ->fileable($model)
+    ->file($request->file('photo'))
+    ->type('photo')
+    ->dir('memory')
+    ->alt('...')
+    ->upload();
+```
+
+Multi-step operations (model create + file upload) must be wrapped in `DB::beginTransaction()`.
+
+---
+
+## Development Tools
+
+| Tool | URL | Purpose |
+|------|-----|---------|
+| Laravel Telescope | `/telescope` | Request / query / job inspector |
+| Log Viewer | `/log-viewer` | Structured log browser |
+| Scribe | `php artisan scribe:generate` | Auto-generate API documentation |
+
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+MIT
