@@ -19,7 +19,9 @@ COPY . .
 # Run Composer install during the build
 # Install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/bin/composer
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader \
+    && chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
+    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
 
 # Expose the application port
