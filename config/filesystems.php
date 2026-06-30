@@ -43,6 +43,21 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+
+        'cdn-public' => [
+            'driver' => 'local',
+            'root' => '/root/services/cdn/yaadegaar/public',
+            'throw' => false,
+            'visibility' => 'public',
+        ],
+
+
+        'cdn-private' => [
+            'driver' => 'local',
+            'root' => '/root/services/cdn/yaadegaar/private',
+            'throw' => false,
+            'visibility' => 'public',
+        ],
         
         'packages' => [
             'driver' => 'local',

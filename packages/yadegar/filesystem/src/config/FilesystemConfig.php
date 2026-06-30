@@ -7,9 +7,10 @@ return [
     // base middleware
     'middleware' => ['api', 'auth:sanctum'],
 
-    'default_disk' => 'public',
+    'default_disk' => env('DEFAULT_DISK', 'cdn-public'),
 
-    'public_disk' => 'public',
+    'public_disk' => 'cdn-public',
 
-    'private_disk' => 'private',
+    'private_disk' => env('PRIVATE_DISK', 'cdn-private'),
+
 ];
