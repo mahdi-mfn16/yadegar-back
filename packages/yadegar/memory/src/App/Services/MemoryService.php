@@ -7,12 +7,16 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Yadegar\Base\App\Services\BaseService;
 use Yadegar\Filesystem\App\Facades\Uploader;
+use Yadegar\Filesystem\App\Services\FileService;
 use Yadegar\Memory\App\Models\DTOs\MemoryDTO;
 use Yadegar\Memory\App\Repositories\Interfaces\MemoryRepositoryInterface;
 
 class MemoryService extends BaseService
 {
-    public function __construct(MemoryRepositoryInterface $repository)
+    public function __construct(
+        MemoryRepositoryInterface $repository,
+        public FileService $fileService
+    )
     {
         parent::__construct($repository);
     }
@@ -142,15 +146,19 @@ class MemoryService extends BaseService
                     ->alt('memory-'.$memory->id)
                     ->upload();
             } elseif ($request->input('remove_photo')) {
-                $memory->files()->where('type', 'photo')->delete();
+                $photo = $memory->files()->where('type', 'photo')->first();
+                $this->fileService->deleteItem($photo);
+
             }
 
             if ($request->input('remove_audio') && !$request->hasFile('audio')) {
-                $memory->files()->where('type', 'audio')->delete();
+                $audio = $memory->files()->where('type', 'audio')->first();
+                $this->fileService->deleteItem($audio);
             }
 
             if ($request->input('remove_video') && !$request->hasFile('video')) {
-                $memory->files()->where('type', 'video')->delete();
+                $video = $memory->files()->where('type', 'video')->first();
+                $this->fileService->deleteItem($video);
             }
 
             DB::commit();
@@ -164,5 +172,30 @@ class MemoryService extends BaseService
         }
         
     }
+
+
+    public function deleteMemory($memory)
+    {
+        try {
+            DB::beginTransaction();
+            
+            $files = $memory->files;
+            foreach($files as $file){
+                $this->fileService->deleteItem($file);
+            }
+
+            $this->delete($memory);
+
+            DB::commit();
+
+            return true;
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            Log::channel('memory')->info($th);
+            return null;
+        }
+        
+    }
+
 
 }

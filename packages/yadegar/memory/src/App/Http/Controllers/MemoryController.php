@@ -118,7 +118,7 @@ class MemoryController extends Controller
     public function destroy(Memory $memory)
     {
         Gate::authorize('delete', $memory);
-        $this->memoryService->delete($memory);
+        $this->memoryService->deleteMemory($memory);
         return $this->successResponse();
     }
 }
