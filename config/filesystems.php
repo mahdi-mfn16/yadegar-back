@@ -46,7 +46,7 @@ return [
 
         'cdn-public' => [
             'driver' => 'local',
-            'root' => '/root/services/cdn/yaadegaar/public',
+            'root' => '/var/www/cdn/public', // base of docker-compose file config
             'throw' => false,
             'visibility' => 'public',
         ],
